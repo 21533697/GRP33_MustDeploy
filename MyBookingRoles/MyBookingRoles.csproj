@@ -244,9 +244,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\MyBookingRolesStoreAfter.mdf" />
-    <Content Include="App_Data\MyBookingRolesStoreAfter_log.ldf">
-      <DependentUpon>MyBookingRolesStoreAfter.mdf</DependentUpon>
+    <Content Include="App_Data\MyBookingRolesMust.mdf" />
+    <Content Include="App_Data\MyBookingRolesMust_log.ldf">
+      <DependentUpon>MyBookingRolesMust.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />

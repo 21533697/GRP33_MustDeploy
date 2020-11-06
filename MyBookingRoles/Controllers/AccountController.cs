@@ -111,7 +111,7 @@ namespace MyBookingRoles.Controllers
                     else if (roleNames.Contains("Delivery"))
                     {
                         //send him to Delivery System controller and index action
-                        return RedirectToAction("DeliveryDashboard", "DeliverySystem");
+                        return RedirectToAction("DeliveryDashboard", "Delivery");
                     }
                     else
                     {

@@ -26,7 +26,7 @@
                     @Html.ActionLink("SuperAdmin Foto45", "Index", "SuperAdmin", new { area = "" }, new { @class = "navbar-brand" })
                 }else if (User.IsInRole("Delivery"))
                 {
-                    @Html.ActionLink("Delivery Foto45", "DeliveryDashboard", "DeliverySystem", new { area = "" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("Delivery Foto45", "DeliveryDashboard", "Delivery", new { area = "" }, new { @class = "navbar-brand" })
                 }else if (User.IsInRole("Artist"))
                 {
                     @Html.ActionLink("Artist Foto45", "ArtistDashboard", "Artist", new { area = "" }, new { @class = "navbar-brand" })
@@ -66,6 +66,8 @@
                             <li></li>
                         }
                     }
+                    <li>@Html.ActionLink("[Date: "+@DateTime.Now.ToString("yyyy-MM-dd") +"]","#","#")</li>
+                    <li>@Html.ActionLink("[Time: "+@DateTime.Now.ToString("HH-mm") +"]","#","#")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>

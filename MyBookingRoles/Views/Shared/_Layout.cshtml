@@ -31,7 +31,7 @@
                 }
                 else if (User.IsInRole("Delivery"))
                 {
-                    @Html.ActionLink("Delivery Foto45", "DeliveryDashboard", "DeliverySystem", new { area = "" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("Delivery Foto45", "DeliveryDashboard", "Delivery", new { area = "" }, new { @class = "navbar-brand" })
                 }
                 else
                 {
@@ -40,13 +40,15 @@
                 }
             </div>
             <div class="navbar-collapse collapse">
+
                 
-                @if (!User.IsInRole("SuperAdmin") && !User.IsInRole("Delivery"))
-                {
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        <li>@Html.ActionLink("|", "#", "#")</li>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("|", "#", "#")</li>
+
+                    @if (!User.IsInRole("SuperAdmin") && !User.IsInRole("Delivery"))
+                    {
                         <li>
                             <a href="@Url.Action("Cart","ShoppingCart")">
                                 <span class="glyphicon glyphicon-shopping-cart" style="color:Highlight"></span>
@@ -54,8 +56,11 @@
                                 <span class="badge">@Session["count"]</span>
                             </a>
                         </li>
-                    </ul>
-                }
+                    }
+
+                    <li>@Html.ActionLink("[Date: " + @DateTime.Now.ToString("yyyy-MM-dd") + "]", "#", "#")</li>
+                    <li>@Html.ActionLink("[Time: " + @DateTime.Now.ToString("HH-mm") + "]", "#", "#")</li>
+                </ul>
 
                 @Html.Partial("_LoginPartial")
             </div>
