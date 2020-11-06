@@ -129,6 +129,9 @@ namespace MyBookingRoles
                     isVisible = true
                 });
 
+            //these are services
+            //change to packages,
+
             context.Packages.AddOrUpdate(p => p.PackageType,
                new Models.BookingModels.Package()
                {
