@@ -1,0 +1,573 @@
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\MyBookingRoles.dll.config
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\MyBookingRoles.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\MyBookingRoles.pdb
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csc.exe
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csc.exe.config
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csc.rsp
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csi.exe
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csi.exe.config
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csi.rsp
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Managed.Core.targets
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.AppContext.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Collections.Immutable.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Console.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Globalization.Calendars.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.IO.Compression.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.IO.FileSystem.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Net.Http.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Net.Sockets.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Reflection.Metadata.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.ValueTuple.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XmlDocument.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XPath.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\vbc.exe
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\vbc.exe.config
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\vbc.rsp
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\VBCSCompiler.exe
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\VBCSCompiler.exe.config
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Antlr3.Runtime.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\EntityFramework.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\EntityFramework.SqlServer.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Core.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Cookies.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Facebook.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Google.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.OAuth.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Twitter.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Web.Infrastructure.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Newtonsoft.Json.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Owin.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\PagedList.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Helpers.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Mvc.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Optimization.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Razor.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.Deployment.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.Razor.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\WebGrease.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\PagedList.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Helpers.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Mvc.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Optimization.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Razor.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.Deployment.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.Razor.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Newtonsoft.Json.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Antlr3.Runtime.pdb
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\EntityFramework.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\EntityFramework.SqlServer.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Core.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Facebook.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Cookies.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Google.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Twitter.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.OAuth.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csprojAssemblyReference.cache
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.Migrations.rateservice.resources
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.Migrations.Rates.resources
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csproj.GenerateResource.cache
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csproj.CoreCompileInputs.cache
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csproj.CopyComplete
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.dll
+E:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.pdb
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\MyBookingRoles.dll.config
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\MyBookingRoles.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\MyBookingRoles.pdb
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csc.exe
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csc.exe.config
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csc.rsp
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csi.exe
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csi.exe.config
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\csi.rsp
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Managed.Core.targets
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.AppContext.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Collections.Immutable.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Console.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Globalization.Calendars.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.IO.Compression.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.IO.FileSystem.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Net.Http.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Net.Sockets.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Reflection.Metadata.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.ValueTuple.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XmlDocument.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XPath.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\vbc.exe
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\vbc.exe.config
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\vbc.rsp
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\VBCSCompiler.exe
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\roslyn\VBCSCompiler.exe.config
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Antlr3.Runtime.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\EntityFramework.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\EntityFramework.SqlServer.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Core.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Cookies.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Facebook.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Google.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.OAuth.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Twitter.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Web.Infrastructure.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Newtonsoft.Json.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Owin.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\PagedList.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Helpers.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Mvc.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Optimization.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Razor.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.Deployment.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.Razor.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\WebGrease.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\PagedList.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Helpers.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Mvc.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Optimization.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.Razor.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.Deployment.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\System.Web.WebPages.Razor.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Newtonsoft.Json.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Antlr3.Runtime.pdb
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\EntityFramework.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\EntityFramework.SqlServer.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Core.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Facebook.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Cookies.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Google.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Twitter.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.OAuth.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csprojAssemblyReference.cache
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.Migrations.rateservice.resources
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.Migrations.Rates.resources
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csproj.GenerateResource.cache
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csproj.CoreCompileInputs.cache
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csproj.CopyComplete
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.dll
+F:\MyBookingRoles\MyBookingRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.pdb
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\MyBookingRoles.dll.config
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\MyBookingRoles.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\MyBookingRoles.pdb
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csc.exe
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csc.exe.config
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csc.rsp
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csi.exe
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csi.exe.config
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csi.rsp
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.AppContext.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Console.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.IO.Compression.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Net.Http.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Net.Sockets.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.ValueTuple.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XPath.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\vbc.exe
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\vbc.exe.config
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\vbc.rsp
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\VBCSCompiler.exe
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Antlr3.Runtime.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\EntityFramework.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\EntityFramework.SqlServer.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Newtonsoft.Json.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Owin.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\PagedList.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\PagedList.Mvc.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Helpers.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Mvc.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Optimization.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Razor.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.Deployment.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.Razor.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\WebGrease.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\PagedList.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\PagedList.Mvc.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Helpers.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Mvc.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Optimization.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Razor.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.Deployment.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.Razor.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Newtonsoft.Json.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Antlr3.Runtime.pdb
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\EntityFramework.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\EntityFramework.SqlServer.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csprojAssemblyReference.cache
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csproj.CoreCompileInputs.cache
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csproj.CopyComplete
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.dll
+C:\Users\21533697\Downloads\MyStoreRoles Main(Final Test)\MyStoreRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.pdb
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\MyBookingRoles.dll.config
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\MyBookingRoles.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\MyBookingRoles.pdb
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csc.exe
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csc.exe.config
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csc.rsp
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csi.exe
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csi.exe.config
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\csi.rsp
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Managed.Core.targets
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.AppContext.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Collections.Immutable.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Console.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Globalization.Calendars.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.IO.Compression.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.IO.FileSystem.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Net.Http.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Net.Sockets.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Reflection.Metadata.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.ValueTuple.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XmlDocument.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XPath.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\vbc.exe
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\vbc.exe.config
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\vbc.rsp
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\VBCSCompiler.exe
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\roslyn\VBCSCompiler.exe.config
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Antlr3.Runtime.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\EntityFramework.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\EntityFramework.SqlServer.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Core.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Cookies.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Facebook.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Google.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.OAuth.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Twitter.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Web.Infrastructure.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Newtonsoft.Json.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Owin.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\PagedList.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\PagedList.Mvc.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Helpers.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Mvc.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Optimization.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Razor.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.Deployment.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.Razor.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\WebGrease.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\PagedList.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\PagedList.Mvc.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Helpers.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Mvc.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Optimization.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.Razor.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.Deployment.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\System.Web.WebPages.Razor.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Newtonsoft.Json.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Antlr3.Runtime.pdb
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\EntityFramework.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\EntityFramework.SqlServer.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Core.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Facebook.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Cookies.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Google.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.Twitter.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.Owin.Security.OAuth.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csprojAssemblyReference.cache
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csproj.CoreCompileInputs.cache
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.csproj.CopyComplete
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.dll
+D:\My Docs school\MyStoreRoles Main(Final Testing Environment)\MyStoreRoles Main\MyBookingRoles\obj\Release\MyBookingRoles.pdb
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\MyBookingRoles.dll.config
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\MyBookingRoles.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\MyBookingRoles.pdb
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\csc.exe
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\csc.exe.config
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\csc.rsp
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\csi.exe
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\csi.exe.config
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\csi.rsp
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.AppContext.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Console.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.IO.Compression.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Net.Http.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Net.Sockets.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.ValueTuple.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Xml.XPath.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\vbc.exe
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\vbc.exe.config
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\vbc.rsp
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\VBCSCompiler.exe
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Antlr3.Runtime.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\EntityFramework.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\EntityFramework.SqlServer.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Newtonsoft.Json.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Owin.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\PagedList.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\PagedList.Mvc.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\PayPal.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.Helpers.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.Mvc.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.Optimization.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.Razor.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.WebPages.Deployment.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.WebPages.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.WebPages.Razor.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Twilio.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\WebGrease.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\EntityFramework.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\EntityFramework.SqlServer.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\PagedList.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\PagedList.Mvc.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\PayPal.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.Helpers.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.Mvc.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.Optimization.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.Razor.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.WebPages.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.WebPages.Deployment.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\System.Web.WebPages.Razor.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Newtonsoft.Json.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Twilio.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Antlr3.Runtime.pdb
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\obj\Release\MyBookingRoles.csprojAssemblyReference.cache
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\obj\Release\MyBookingRoles.Migrations.pro.resources
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\obj\Release\MyBookingRoles.csproj.GenerateResource.cache
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\obj\Release\MyBookingRoles.csproj.CoreCompileInputs.cache
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\obj\Release\MyBookingRoles.csproj.CopyComplete
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\obj\Release\MyBookingRoles.dll
+C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\obj\Release\MyBookingRoles.pdb

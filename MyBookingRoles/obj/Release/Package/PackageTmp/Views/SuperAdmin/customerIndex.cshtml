@@ -1,0 +1,56 @@
+﻿@model IEnumerable<MyBookingRoles.Models.ApplicationUser>
+
+@{
+    ViewBag.Title = "Customer List";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Customer List</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.UserName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit","AppUsers", new { id = item.Id }, null) |*@
+                @Html.ActionLink("Details", "Details","AppUsers", new { id = item.Id }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Delete", "Delete","AppUsers", new { id = item.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })

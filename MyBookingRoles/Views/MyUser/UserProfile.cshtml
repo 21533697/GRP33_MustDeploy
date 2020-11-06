@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "User Profile";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Your Profile - @User.Identity.GetUserName()</h2>
+
+<div class="row">
+    <p>
+        <b>Your Profile Details</b>
+        <br />
+    </p>
+    <p>
+        @Html.ActionLink("Manage Password Information!", "Index", "Manage", null, new { @class = "btn btn-default" })
+
+        <ul>
+            <br />
+            <li>Add Profile information</li>
+            <li>Add Delete Accout</li>
+        </ul>
+    </p>
+    <p>
+        <br />
+        <hr />
+        @Html.ActionLink("Back Home Dashboard", "Index", "MyUser", null, new { @class = "btn btn-primary" })
+    </p>
+</div>

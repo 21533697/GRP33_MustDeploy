@@ -1,0 +1,38 @@
+﻿
+<div class="row">
+    <div class="col-md-4">
+        <h3><u>Website Contact Info!</u></h3>
+        <p>
+            <ul>
+                <li>Site Email : <a href="mailto:StudioFoto45@outlook.com">StudioFoto45@outlook.com</a></li>
+            </ul>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h3><u>Website Policy</u></h3>
+        <p>
+            &copy; @DateTime.Now.Year - <b>Studio Foto45</b> - Web Application
+            <ul>
+                <li>@Html.ActionLink("Customer Support","#")</li>
+            </ul>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h3><u>Website Social Media</u></h3>
+        <p>
+            <ul>
+                <li>LinkedIn : &clubs; @Html.ActionLink("StudioFoto45", "#") &clubs;</li>
+            </ul>
+        </p>
+    </div>
+</div>
+<br />
+@if (!User.IsInRole("SuperAdmin"))
+{
+    <div class="row">
+        <div class="panel-footer" style="text-align: center; padding: 10px;">
+            <h2><u>Find Us On Google Maps!</u></h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3460.4314082133073!2d31.00564681464228!3d-29.851829929303747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a9e654795375%3A0xe5a2dd40e471ef08!2sDurban%20University%20Of%20Technology%20-%20Ritson%20Campus!5e0!3m2!1sen!2sza!4v1596142324548!5m2!1sen!2sza" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+}

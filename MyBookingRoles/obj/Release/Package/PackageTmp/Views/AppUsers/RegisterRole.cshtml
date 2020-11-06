@@ -1,0 +1,50 @@
+﻿@model MyBookingRoles.Models.RegisterViewModel
+
+@{
+    ViewBag.Title = "RegisterRole";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="box-title">
+            <b>
+                <h4>Create Role</h4>
+            </b>
+        </h3>
+    </div>
+    <!-- /.box-header -->
+    <div class="panel-body">
+        <p>
+            @Html.ActionLink("Create New Role", "Create", "Role") |
+            @Html.ActionLink("Assign Role To User", "RegisterRole", "AppUsers")
+
+        </p>
+        @using (Html.BeginForm("RegisterRole", "AppUsers", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            @Html.AntiForgeryToken()
+            <hr />
+            @Html.ValidationSummary("", new { @class = "text-danger" })
+            <table class="table table-hover table-bordered table-condensed">
+
+                <tr class="form-group">
+                    <th>
+                        @Html.Label("Select Role", new { @class = "control-label" })
+                    </th>
+                    <th>
+                        @Html.Label("Select User", new { @class = "control-label" })
+                    </th>
+                </tr>
+
+                <tr class="form-group">
+                    <td>
+                        @Html.DropDownList("Name", null, new { @class = "form-control" })
+                    </td>
+                    <td>
+                        @Html.DropDownList("UserName", null, new { @class = "form-control" })
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Register" class="btn btn-default" />
+        }
+    </div>
+</div>

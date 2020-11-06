@@ -1,0 +1,67 @@
+﻿@model IEnumerable<MyBookingRoles.Models.BookingModels.Booking>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+    Number Of All Bookings : @Model.Count() Bookings.
+</p>
+<table class="table table-responsive table-hover table-condensed"">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Service.ServiceType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArtistID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Duration)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Service.ServiceType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArtistID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Time)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.BookingID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.BookingID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.BookingID })
+            </td>
+        </tr>
+    }
+
+</table>

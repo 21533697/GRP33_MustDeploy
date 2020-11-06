@@ -1,0 +1,58 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Artist Dashboard";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="jumbotron" style="text-align: center;">
+    <h1>Welocome to Artist Dashboard</h1>
+    <h4 class="lead" style="text-align: center;">
+        <b><u>@User.Identity.GetUserName()</u></b>
+    </h4>
+    <hr />
+    <div style="padding:5px; border: 1px solid black; background-color: white;" class="row">
+        <p>Manage Your Account Here. As an Artist.</p>
+    </div>
+</div>
+<hr />
+
+<div class="row">
+    <div class="container">
+        <h1 style="text-align: center;"><u><b>Your General Options</b></u></h1>
+        <br />
+        <br />
+        <div class="col-md-2">
+            <h3>Menu</h3>
+        </div>
+
+        <div style="background-color: white; padding: 5px; text-align:center;" class="col-md-9">
+            <div class="container">
+
+                <p style="padding: 5px 5px; " class="col-md-3">
+                    @Html.ActionLink("Artist Specialty", "#", "#", null, new { @class = "btn btn-danger" })
+                    <br />
+                    <br />
+                    All My Artist Specialties
+                </p>
+                <p style="padding: 5px 5px; " class="col-md-3">
+                    @Html.ActionLink("All My Bookings", "ArtistBookings", "Artist", null, new { @class = "btn btn-primary" })
+                    <br />
+                    <br />
+                    All Your Artist Bookings
+                </p>
+                <p style="padding: 5px 5px; " class="col-md-3">
+                    @Html.ActionLink("Completed Bookings", "#", "#", null, new { @class = "btn btn-danger" })
+                    <br />
+                    <br />
+                    All Your Artist Bookings
+                </p>
+            </div>
+            <hr />
+            <div>
+                <h2>
+                    Delete account Doesnt Work.
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>

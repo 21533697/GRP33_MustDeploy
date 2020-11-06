@@ -1,0 +1,95 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Store.Order>
+@{
+    ViewBag.Title = "Customer Orders";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+@using (Html.BeginForm("customerOrders", "MyUser", FormMethod.Get))
+{
+    <div class="row" style="background-color: black; padding: 10px;">
+        <div class="col-md-2">Orders Sort</div>
+        <div style="text-align:center;">
+            @Html.ActionLink("Processing Orders", "customerOrders", "MyUser", new { searchWord = "Processing" }, new { @class = "btn  btn-primary" }) |
+            @Html.ActionLink("Approved Orders", "customerOrders", "MyUser", new { searchWord = "Approved" }, new { @class = "btn  btn-success" }) |
+            @Html.ActionLink("Orders On Its Way", "customerOrders", "MyUser", new { searchWord = "On_Its_Way" }, new { @class = "btn  btn-danger" }) |
+            @Html.ActionLink("Delivered Orders", "customerOrders", "MyUser", new { searchWord = "Delivered" }, new { @class = "btn  btn-danger" }) |
+            @Html.ActionLink("Cancelled Orders", "customerOrders", "MyUser", new { searchWord = "Cancelled" }, new { @class = "btn  btn-danger" }) |
+            @Html.ActionLink("Refresh", "customerOrders", "MyUser", null, new { @class = "btn  btn-primary" })
+        </div>
+    </div>
+}
+<br />
+
+<h3 style="border-top:1px solid black;">
+    <b>
+        <u>All Your Orders : <b>@Model.Count()</b></u>
+        @*<u class="pull-right">@Html.ActionLink("BIN", "#",null, new { @class="glyphicon-bishop"})</u>*@
+    </b>
+
+</h3>
+
+<table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerAddress)
+        </th>
+        <th style="text-align:center; background-color:gray;">Operations</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        if (item.Status != "Cancelled")
+        {
+            <tr style="text-align:center;">
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderDate)
+                </td>
+                <td>
+                    <b><u>@Html.DisplayFor(modelItem => item.Status)</u></b>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerAddress)
+                </td>
+                <td style="text-align:center;">
+                    @Html.ActionLink("Order Details", "Details", "Orders", new { id = item.OrderId }, new { @class = "btn btn-primary" })
+                </td>
+            </tr>
+        }
+        else
+        {
+            <tr>
+                <td>Can not be found.</td>
+            </tr>
+        }
+
+    }
+</table>
+
+<hr />
+<div>
+    <h3  style="border-top:1px solid black;">All Your Deliveries</h3>
+    <hr />
+    <div>
+
+    </div>
+</div>
+@Html.ActionLink("Back To Home", "Index", "MyUser", null, new { @class = "btn btn-primary" })
+

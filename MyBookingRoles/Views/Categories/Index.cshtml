@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Store.Category>
+
+@{
+    ViewBag.Title = "Category List";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Category List</h2>
+
+<p>
+    @Html.ActionLink("Add New Category", "Create")
+</p>
+<table class="table table-bordered table-hover table-condensed" id="UsersWithRoles">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isVisible)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.isVisible)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.CategoryId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.CategoryId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.CategoryId })
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+<p>
+    @Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })
+</p>
+

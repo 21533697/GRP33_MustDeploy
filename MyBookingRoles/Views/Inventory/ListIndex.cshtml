@@ -1,0 +1,133 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Store.Product>
+
+@{
+    ViewBag.Title = "List Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+@using (Html.BeginForm("ProdCatalogue", "Store", FormMethod.Get))
+{
+    <div class="row" style="background-color: black; padding: 10px;">
+        <div class="col-md-2">
+            <h4>Inventory Sort</h4>
+        </div>
+        <div class="col-md-2">
+            @Html.DropDownList("movieGenre", null, htmlAttributes: new { @class = "form-control" })
+        </div>
+        <div class="col-md-2">
+            @Html.DropDownList("prodCategory", null, htmlAttributes: new { @class = "form-control" })
+        </div>
+        <div class="col-md-2">
+            @Html.TextBox("searchWord", null, null, new { @class = "form-control" })
+        </div>
+        <div class="col-md-2">
+            <input type="submit" value="Search Product" class="btn btn-success" />
+        </div>
+    </div>
+}
+<br />
+<div class="jumbotron" style="text-align: center; padding: 10px;">
+    <h2><u>Inventory Management</u></h2>
+    <div style="padding: 5px;">
+        <p>
+            @*@Html.ActionLink("Manage Discount", "#", "#", null, new { @class = "btn btn-success" }) |*@
+            @Html.ActionLink("Manage Specials", "#", "#", null, new { @class = "btn btn-danger" }) |
+            @Html.ActionLink("Manage Features", "#", "#", null, new { @class = "btn btn-danger" })
+            <u>Buttons Not Working</u>
+        </p>
+        <br />
+        <p style="background-color: aqua;">All Product Quantity <b>Sum : @ViewBag.prodQ</b></p>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-12" style="padding: 5px; border-top: 2px solid black;">
+        @foreach (var item in Model)
+        {
+            var base64 = "";
+            var imgsrc = "";
+            var Ccolor = "white";
+
+            <div class="col-md-2" style="text-align:center; border: 1px solid black; margin: 5px;">
+
+                @if (item.ProductPics != null)
+                {
+                    base64 = Convert.ToBase64String(item.ProductPics);
+                    imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+
+                    <img src='@imgsrc' class="img-responsive" />
+                }
+
+                @*<br />*@
+
+                @if (item.InStoreQuantity < 100)
+                {
+                    Ccolor = "firebrick";
+                }
+
+                <div style="border: 1px dotted white; background-color: @Ccolor">
+
+                    <p style="word-wrap: break-word; width: auto;">
+                        <b><u>@Html.DisplayFor(modelItem => item.ProductName)</u></b>
+                    </p>
+                    <p style="color: darkolivegreen;">
+                        @Html.DisplayFor(modelItem => item.InStoreQuantity) - Item(s) &nbsp;
+                        | &nbsp;
+                        @Html.DisplayFor(modelItem => item.IsVisible)
+                    </p>
+                    <p>
+                        R : @Html.DisplayFor(modelItem => item.Price) &nbsp;
+                        @if (item.IsFeatured == true)
+                        {
+                            @Html.DisplayNameFor(model => model.IsFeatured);
+                        }
+                        else
+                        {
+                            @Html.Display("---");
+                        }
+                    </p>
+                    <p>
+                        Discount : <b style="color: red;">R @Html.DisplayFor(modelItem => item.Discount)</b>
+                    </p>
+
+
+                    @*<br />*@
+                    <p style="text-align:center;">
+                        @Html.ActionLink("Add Quantity", "AddQuantity", new { id = item.ProductID }, new { @class = "btn btn-success" })<br /><br />
+
+                        @if (item.IsFeatured == false)
+                        {
+                            @Html.ActionLink("Add To Feature", "AddToFeature", new { id = item.ProductID }, new { @class = "btn btn-primary" });<br /><br />
+                        }
+                        else if (item.IsFeatured == true)
+                        {
+                            @Html.ActionLink("Cancel Feature", "CancelFeature", new { id = item.ProductID }, new { @class = "btn btn-danger" });<br /><br />
+                        }
+
+
+                        @if (item.Discount > 0)
+                        {
+                            @Html.ActionLink("Cancel Special", "CancelSpecial", new { id = item.ProductID }, new { @class = "btn btn-danger" });
+                        }
+                        else
+                        {
+                            @Html.ActionLink("Add To Special", "AddToSpecial", new { id = item.ProductID }, new { @class = "btn btn-primary" });
+
+                        }
+                    </p>
+                </div>
+            </div>
+        }
+    </div>
+    <ul>
+        <li>Is Visible Doesnt work</li>
+        <li>Add To Feature Doesnt work</li>
+    </ul>
+    <div class="col-md-12">
+        <hr />
+        <br />
+        <div class="row">
+            @Html.ActionLink("Back To SuperADmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })
+        </div>
+    </div>
+</div>
+

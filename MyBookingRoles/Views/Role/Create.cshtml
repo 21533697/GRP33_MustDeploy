@@ -1,0 +1,39 @@
+﻿@model Microsoft.AspNet.Identity.EntityFramework.IdentityRole
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<style>
+    #tbRole, .c {
+        border: double;
+    }
+</style>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="box-title">
+            <b>
+                <b>Create Role</b>
+            </b>
+        </h3>
+    </div>
+    <!-- /.box-header -->
+    <div class="panel-body">
+        @using (Html.BeginForm())
+        {
+            <table class="table table-bordered table-hover table-condensed" id="UsersWithRoles">
+                <tr>
+                    <td>
+                        @Html.Label("Role Name", new { @class = "control-label" })
+                    </td>
+                    <td>
+                        @Html.EditorFor(m => m.Name, new { @class = "form-control" })
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Create Role" class="btn btn-default" />
+        }
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</div>

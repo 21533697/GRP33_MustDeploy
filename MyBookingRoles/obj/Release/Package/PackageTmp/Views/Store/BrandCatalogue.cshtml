@@ -1,0 +1,65 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Store.Brand>
+
+@{
+    ViewBag.Title = "Brand Catalogue";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("BrandCatalogue", "Store", FormMethod.Get))
+{
+    <div class="row" style="background-color: black; padding: 5px">
+        <div class="col-md-2">
+            <h4>Brands Catalogue </h4>
+        </div>
+        <div class="col-md-2">
+            @Html.TextBox("searchWord", null, null, new { @class = "form-control" })
+
+        </div>
+        <div class="col-md-2">
+            <input type="submit" value="Search Product" class="btn btn-success" />
+        </div>
+    </div>
+}
+<br />
+<div class="jumbotron" style="text-align: center;">
+    <h1><b><u>Brands</u></b></h1>
+</div>
+
+<div class="row" style="padding: 5px; background-color: gray;">
+    @if (Model.Count() == 0)
+    {
+        <h5>
+            No Match Found.
+        </h5>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <div class="col-md-3" style="border-left: 1px solid black;">
+                <div style="border: 1px solid white; width:250px; height:100px;">
+                    <center>
+                        <h3 style="">@Html.DisplayFor(modelItem => item.Name)</h3>
+                        <p>@Html.ActionLink("View All Products", "ProdCatalogue", new { BrandName = item.Name }, new { @class = "btn  btn-success" })</p>
+                    </center>
+                </div>
+            </div>
+
+        }
+    }
+
+</div>
+
+<br />
+<p><b><u>All Brands Products On Special</u></b></p>
+<br />
+
+<div class="row" style="padding: 5px; background-color: white;">
+    Here.
+</div>
+<hr />
+<div>
+    @Html.ActionLink("Back to  Home Page", "Index", "Home", null, new { @class = "btn btn-default" })
+    |
+    @Html.ActionLink("Back to Full List", "BrandCatalogue", null, new { @class = "btn  btn-primary" })
+</div>

@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "BookingSuccess";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>
+    <u>Thank you For Booking at <b>Studio Foto45</b></u>
+</h2>
+<p>
+    <b>Your Booking Will be Approved in 6-7 Working day</b>. &nbsp;
+    Please Check Your Email For Updates.
+
+    <br />
+    <br />
+    This Booking For :(<b>Booking Name</b>), Costs R @ViewBag.total
+</p>
+
+<div class="form-inline">
+    <h3>
+        Your Booking is being Processed.  @Html.ActionLink("Click Here!", "customerBookings", "customerBooking", null, new { @class = "btn btn-success" }) for your Bookings.
+    </h3>
+    <hr />
+    <p>
+        @Html.ActionLink("Go Back Your Dashboard!", "Index", "MyUser", null, new { @class = "btn btn-primary" })
+    </p>
+</div>

@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "SuperAdminProfile";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Super Administraor Profile - @User.Identity.GetUserName()</h2>
+
+<p>
+    This will display Your Information <b>If</b> You are a Registered customer.
+    <br />
+    <b>Hooray! You Did it</b>
+</p>
+<p>
+    @Html.ActionLink("Manage Your Contact Information!", "Index", "Manage", null, new { @class = "btn btn-default" })
+</p>
+<hr />
+<p>
+    @Html.ActionLink("Back To SuperADmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })
+</p>

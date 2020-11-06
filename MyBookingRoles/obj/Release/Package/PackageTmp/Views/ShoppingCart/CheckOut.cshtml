@@ -1,0 +1,166 @@
+﻿@using MyBookingRoles.Models.Store
+
+@{
+    ViewBag.Title = "Check-Out";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<scrtipt src="https://www.paypal.com/sdk/js?client_id=AawEljv71vFB1_wg6hMgPOh3CAmSWR7joi42INMYpQwXyI1_ywkClceG1j8FuMP4oAJXns_oN16fzQwe"> </scrtipt>
+<div id="paypal-button-container"></div>
+<script>
+    paypal.Buttons({
+        createOrder: function (data, actions) {
+            // This function sets up the details of the transaction, including the amount and line item details.
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '0.01'
+                    }
+                }]
+            });
+        },
+
+        onApprove: function (data, actions) {
+            // This function captures the funds from the transaction.
+            return actions.order.capture().then(function (details) {
+
+                // This function shows a transaction success message to your buyer.
+                alert('Transaction completed by ' + details.payer.given_name);
+            });
+        }
+    }).render('#paypal-button-container');
+</script>*@
+
+<h2><u>Check-Out : @ViewBag.User</u></h2>
+
+@{
+    decimal s = 0;
+}
+<div class="form-inline">
+    <h2>Your Ordered Products</h2>
+    <table class="table table-responsive table-hover table-condensed">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Sub</th>
+            <th>Discount Price</th>
+            <th style="text-align:center; background-color: gray;">Operations</th>
+        </tr>
+        @if ((List<Item>)Session["cart"] != null)
+        {
+            foreach (var item in (List<Item>)Session["cart"])
+            {
+                s = s + item.Pr.Price * item.Quantity;
+                <tr>
+                    <td>@item.Pr.ProductName</td>
+                    <td>R @item.Pr.Price</td>
+                    <td>@item.Quantity</td>
+                    <td>
+                        R @(item.Pr.Price * item.Quantity)
+                    </td>
+                    <td>R @item.Pr.Discount</td>
+                    <td style="text-align:center;">@Html.ActionLink("Remove Item", "Delete", "ShoppingCart", new { id = item.Pr.ProductID }, new { @class = "btn btn-danger" })</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr class="row">
+                <td style="background-color: red;">
+                    <h3>Check-Out Empty .</h3>
+                    <p>
+                        @Html.ActionLink("Go Back Shopping!", "ProdCatalogue", "Store")
+                    </p>
+                </td>
+            </tr>
+        }
+    </table>
+    <br />
+    <p>
+        <h3 >
+            <u>Total Amount : R @s</u>
+        </h3>
+    </p>
+
+    <br />
+    <br />
+    @*<ul>
+        <li>Add user Address full Details</li>
+    </ul>*@
+    @if (s != 0)
+    {
+        <div class="form-inline">
+            @using (Html.BeginForm("ProcessOrder", "ShoppingCart", FormMethod.Post, new { id = "customerform" }))
+            {
+                <table class="table table-responsive table-condensed">
+                    <tr>
+                        <td colspan="2" style="text-align: center; background-color: gray;"><h3><u>Delivery Information</u></h3></td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Total Amount</td>
+                        <td>R <input type="text" name="TotalAmount" value="@s" readonly class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Customer Name</td>
+                        <td>&nbsp; &nbsp; <input type="text" name="custName" required class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td>&nbsp; &nbsp; <input type="text" name="LastName" required class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Customer Phone</td>
+                        <td>&nbsp; &nbsp; <input type="text" name="custPhone" required class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>Customer Email</td>
+                        <td>&nbsp; &nbsp; <input type="text" name="custEmail" readonly value="@ViewBag.User" class="form-control" /></td>
+                    </tr>
+
+
+                    <tr>
+                        <td colspan="2" style="text-align: center; background-color: gray;"><h3><u>Delivery Address</u></h3></td>
+                        
+                    </tr>
+                    <tr>
+                       
+                        <td>Address <u>(House Number, Street Name)</u></td>
+                        <td>&nbsp; &nbsp; <input type="text" name="Street" required class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td>&nbsp; &nbsp; <input type="text" name="City" required class="form-control" /></td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Country</td>
+                        <td>&nbsp; &nbsp; <input type="text" name="Country" required class="form-control" /></td>
+                    </tr>
+                     <tr>
+                        <td>Zip-Code</td>
+                        <td>&nbsp; &nbsp; <input type="text" name="ZipCode" required class="form-control" /></td>
+                    </tr>
+                    
+                </table>
+                <hr />
+                <div class="form-group">
+
+                    <br />
+                    <input type="submit" value="Process Order" class="btn btn-success" />  | <input type="reset" value="Clear" class="btn btn-warning" />
+                </div>
+            }
+        </div>
+
+        <hr />
+        <div class="row">
+            @Html.ActionLink("Go Back Shopping!", "ProdCatalogue", "Store", null, new { @class = "btn btn-default pull-left" })
+            
+            @*@Html.ActionLink("Save Shopping Cart!", "#", "#", null, new { @class = "btn btn-danger" }) | 
+            @Html.ActionLink("View Saved Shoppings!", "#", "#", null, new { @class = "btn btn-danger" })*@
+        </div>
+    }
+</div>
+
+

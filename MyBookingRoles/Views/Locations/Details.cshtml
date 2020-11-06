@@ -1,0 +1,35 @@
+﻿@model MyBookingRoles.Models.BookingModels.Location
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Location</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationPrice)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LocationId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

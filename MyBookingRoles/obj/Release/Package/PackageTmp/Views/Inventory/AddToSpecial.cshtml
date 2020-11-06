@@ -1,0 +1,52 @@
+﻿@model MyBookingRoles.Models.Store.Product
+@{
+    ViewBag.Title = "AddToDiscounts";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2><u>Add To Discounts : @Html.DisplayFor(model => model.ProductName) </u></h2>
+<br />
+
+<div class="col-md-12" style="background-color: aquamarine; padding: 10px;">
+    <div style="background-color: gray;">
+        <p><b>@Html.LabelFor(model => model.Discount, htmlAttributes: new { @class = "control-label" }) : <u>@Html.DisplayFor(model => model.Discount)</u></b></p>
+        <p>
+            <u>Current Price : <b>R @Html.DisplayFor(model => model.Price) </b></u>
+        </p>
+    </div>
+
+
+    <hr />
+    <br />
+    @using (Html.BeginForm("AddToSpecial", "Inventory", FormMethod.Post))
+    {
+        <div class="col-md-6">
+            <div class="form-group">
+                <div>
+                    Enter Amount To Discount (Format(-0.00-)
+                    <input type="text" name="AddDiscount" class="form-control" />
+                    <br />
+                    <input type="submit" value="Add Discount" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            @if (Model.ProductPics != null)
+            {
+                var base64 = Convert.ToBase64String(Model.ProductPics);
+                var imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+
+                <img src='@imgsrc' class="img-responsive" />
+            }
+        </div>
+    }
+</div>
+
+<div class="col-md-12">
+    <hr />
+    <br />
+    <div class="row">
+        @Html.ActionLink("Back To Inventory", "ListIndex", "Inventory", null, new { @class = "btn btn-primary" })
+    </div>
+</div>

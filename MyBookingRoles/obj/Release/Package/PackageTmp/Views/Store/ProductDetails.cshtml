@@ -1,0 +1,95 @@
+﻿@model MyBookingRoles.Models.Store.Product
+
+@{
+    ViewBag.Title = "ProductDetails";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>
+    <u>@Html.DisplayFor(model => model.ProductName) - Details</u>
+</h2>
+<p style="background-color: gray; padding: 5px;">
+    @if (User.IsInRole("SuperAdmin"))
+    {
+        @Html.ActionLink("Manage Product Orders", "Index", "Products", new { id = Model.ProductID }, new { @class = "btn btn-default" })
+
+    }
+    else
+    {
+        @Html.ActionLink("Order Now", "OrderNow", "ShoppingCart", new { id = Model.ProductID }, new { @class = "btn btn-success" })
+    }
+</p>
+<div class="info">
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            @if (Model.ProductPics != null)
+            {
+                var base64 = Convert.ToBase64String(Model.ProductPics);
+                var imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+
+                <img src='@imgsrc' style="width:350px;height:350px" class="img-responsive" />
+            }
+        </div>
+        <div class="col-md-4">
+            <h3 style="background-color: gray;">Details</h3>
+            <hr />
+            <h4>
+                @Html.DisplayNameFor(model => model.Brand.Name)
+            </h4>
+
+            <p>
+                @Html.DisplayFor(model => model.Brand.Name)
+            </p>
+
+            <h4>
+                @Html.DisplayNameFor(model => model.Category.CategoryName)
+            </h4>
+
+            <p>
+                @Html.DisplayFor(model => model.Category.CategoryName)
+            </p>
+
+            <h4>
+                @Html.DisplayNameFor(model => model.Description)
+            </h4>
+
+            <p>
+                @Html.DisplayFor(model => model.Description)
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3 style="background-color: gray;">
+                <u>@Html.DisplayNameFor(model => model.Price)</u>
+            </h3>
+
+            <h3>
+                R @Html.DisplayFor(model => model.Price)
+            </h3>
+            <h3>
+                <u>Available Items In-store : (@Html.DisplayFor(model => model.InStoreQuantity))</u>
+            </h3>
+
+            <h3 style="background-color: gray;">
+                @Html.DisplayNameFor(model => model.Price)
+            </h3>
+
+            <p>
+                Subscription Discount : <b><u>R @Html.DisplayFor(model => model.Discount)</u></b>
+            </p>
+        </div>
+    </div>
+    <br />
+
+</div>
+<hr />
+<div>
+    @if (User.IsInRole("SuperAdmin"))
+    {
+        @Html.ActionLink("Back to List", "Index", "Products", null, new { @class = "btn btn-primary" });
+    }
+    else
+    {
+        @Html.ActionLink("Continue Shopping!", "ProdCatalogue", "Store", null, new { @class = "btn btn-primary" });
+    }
+</div>

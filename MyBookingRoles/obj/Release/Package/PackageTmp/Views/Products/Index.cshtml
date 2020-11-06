@@ -1,0 +1,96 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Store.Product>
+
+@{
+    ViewBag.Title = "Product List";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>All Product List</h2>
+
+<p>
+    @Html.ActionLink("Add New Product", "Create", null, new { @class = "btn btn-default" })
+</p>
+<table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Brand.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductPics)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsVisible)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsFeatured)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsOnSpecial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Discount)
+        </th>
+        <th style="background-color: gray;text-align:center;">Actions</th>
+    </tr>
+
+@foreach (var item in Model)
+{
+    var base64 = "";
+    var imgsrc = "";
+
+    <tr style="text-align:center">
+        <td>
+            @Html.DisplayFor(modelItem => item.Brand.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.CategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @if (item.ProductPics != null)
+            {
+                base64 = Convert.ToBase64String(item.ProductPics);
+                imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+
+                <img src='@imgsrc' style="width:50px;height:50px" class="img-responsive"/>
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsVisible)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsFeatured)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsOnSpecial)
+        </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.Discount)
+        </td>
+        <td style="text-align:center;">
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.ProductID }, new { @class = "btn btn-success" }) |*@
+            @Html.ActionLink("Details", "Details", new { id=item.ProductID }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductID }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>
+<hr />
+<p>
+    @Html.ActionLink("Back To SuperADmin", "Index","SuperAdmin", null, new { @class = "btn btn-primary" })
+</p>

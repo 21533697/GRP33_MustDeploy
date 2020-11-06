@@ -1,0 +1,57 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Delivery Dashboard";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="jumbotron" style="text-align: center;">
+    <h1>Welocome to Delivery Dashboard</h1>
+    <h4 class="lead" style="text-align: center;">
+        <b><u>@User.Identity.GetUserName()</u></b>
+    </h4>
+    <hr />
+    <div style="padding:5px; border: 1px solid black; background-color: white;" class="row">
+        <p>Manage Your Account Here. As a Delivery Personel.</p>
+    </div>
+</div>
+<hr />
+
+<div class="row">
+    <div class="container">
+        <h1 style="text-align: center;"><u><b>Your General Options</b></u></h1>
+        <br />
+        <br />
+        <div class="col-md-2">
+            <h3>Menu</h3>
+        </div>
+
+        <div style="background-color: white; padding: 15px; text-align:center;" class="col-md-9">
+            <div class="container">
+                <p style="padding: 5px 5px; " class="col-md-3">
+                    @Html.ActionLink("Approved Orders", "#", "DeliverySystem", null, new { @class = "btn btn-danger" })
+                    <br />
+                    <br />
+                    All Approved Orders
+                </p>
+
+                <p style="padding: 5px 5px; " class="col-md-3">
+                    @Html.ActionLink("Make A Delivery", "#", "DeliverySystem", null, new { @class = "btn btn-danger" })
+                    <br />
+                    <br />
+                    Your Make A Delivery Here!
+                </p>
+                <p style="padding: 5px 5px;" class="col-md-3">
+                    @Html.ActionLink("My Delivered Orders", "#", "DeliverySystem", null, new { @class = "btn btn-danger" })                    <br />
+                    <br />
+                    Your Delivered Orders Here!
+                </p>
+            </div>
+            <hr />
+            <p>
+                <h2>
+                    Delete account Doesnt Work.
+                </h2>
+            </p>
+        </div>
+    </div>
+</div>

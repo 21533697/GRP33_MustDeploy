@@ -1,0 +1,43 @@
+﻿@model IEnumerable<MyBookingRoles.Models.BookingModels.Location>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LocationType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LocationPrice)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationPrice)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.LocationId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.LocationId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.LocationId })
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+@Html.ActionLink("Return To Internals", "Internals", "BookingManagement", null, new { @class = "btn btn-primary" })

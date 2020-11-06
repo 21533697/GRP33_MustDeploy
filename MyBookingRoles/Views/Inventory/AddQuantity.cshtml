@@ -1,0 +1,31 @@
+﻿@model MyBookingRoles.Models.Store.Product
+
+@{
+    ViewBag.Title = "AddQuantity";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Add Quantity For :  @Html.DisplayFor(model => model.ProductName)</h2>
+<div>
+    <p><b>Product Quantity : <u>@Html.DisplayFor(model => model.InStoreQuantity)</u> - Items</b></p>
+</div>
+@using (Html.BeginForm("AddQuantity", "Inventory", FormMethod.Post))
+{
+    <div class="form-horizontal">
+        <div class="form-group">
+
+            @Html.LabelFor(model => model.InStoreQuantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="text" name="AddedQuantity" class="form-control" />
+                <br />
+                <input type="submit" value="Update Quantity" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<div class="col-md-12">
+    <div class="row">
+        @Html.ActionLink("Back To List", "ListIndex", "Inventory", null, new { @class = "btn btn-primary" })
+    </div>
+</div>
+

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Studio Foto45</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @if (User.IsInRole("Customer"))
+                {
+                    @Html.ActionLink("User Foto45", "Index", "MyUser", new { area = "" }, new { @class = "navbar-brand" })
+                }
+                else if (User.IsInRole("SuperAdmin"))
+                {
+                    @Html.ActionLink("SuperAdmin Foto45", "Index", "SuperAdmin", new { area = "" }, new { @class = "navbar-brand" })
+                }else if (User.IsInRole("Delivery"))
+                {
+                    @Html.ActionLink("Delivery Foto45", "DeliveryDashboard", "DeliverySystem", new { area = "" }, new { @class = "navbar-brand" })
+                }else if (User.IsInRole("Artist"))
+                {
+                    @Html.ActionLink("Artist Foto45", "ArtistDashboard", "Artist", new { area = "" }, new { @class = "navbar-brand" })
+                }
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("|", "#", "#")</li>
+
+                        if (User.IsInRole("Customer"))
+                        {
+                            
+                            <li>@Html.ActionLink("User Profile", "UserProfile", "MyUser")</li>
+                            <li>@Html.ActionLink("|", "#", "#")</li>
+                            <li>@Html.ActionLink("Your Cart", "Cart", "ShoppingCart")</li>
+                        }
+                        else if (User.IsInRole("SuperAdmin"))
+                        {
+                            <li>@Html.ActionLink("Super Admin Profile", "SuperAdminProfile", "SuperAdmin")</li>
+                            <li>@Html.ActionLink("All App Users", "Index", "AppUsers")</li>
+                        }
+                        else if (User.IsInRole("Delivery"))
+                        {
+                            <li></li>
+                            <li>@Html.ActionLink("Delivery Profile", "SuperAdminProfile", "SuperAdmin")</li>
+                            <li></li>
+                        }else if (User.IsInRole("Artist"))
+                        {
+                            <li></li>
+                            <li>@Html.ActionLink("Artist Profile", "#", "#")</li>
+                            <li></li>
+                        }
+                    }
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content" style="background-color:deepskyblue;padding: 25px; border-radius: 5px; ">
+        @RenderBody()
+
+    </div>
+    <br />
+    <footer style="background-color: silver; border-radius: 5px; padding: 15px; margin: 15px;">
+        @{
+            Html.RenderPartial("_Footer");
+        }
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

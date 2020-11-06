@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Microsoft.AspNet.Identity.EntityFramework.IdentityRole>
+@{
+    ViewBag.Title = "Roles List";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="box-title">
+            <b>Roles List</b>
+        </h3>
+    </div>
+    <!-- /.box-header -->
+    <div class="panel-body">
+        @*<p>
+            @Html.ActionLink("Create New Role", "Create", "Role") |
+            @Html.ActionLink("Assign Role To User", "RegisterRole", "AppUsers")
+        </p>*@
+
+        <table class="table table-bordered table-hover table-condensed" id="UsersWithRoles">
+            <tr>
+                <th>
+                    Role id
+                </th>
+                <th>
+                    Role Name
+                </th>
+                <th>
+                    Operations
+                </th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Id
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @Html.ActionLink("All Role Users", "AllRoleUsers", new { id = item.Id }) |
+                        @Html.ActionLink("Delete Role", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        </table>
+        @Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })
+    </div>
+    <div class="panel-footer">
+        <p class="box-title"><b>Total Users till @String.Format("{0 : dddd, MMMM d, yyyy}", DateTime.Now)  : </b><span class="label label-primary">@Model.Count()</span></p>
+    </div>
+</div>

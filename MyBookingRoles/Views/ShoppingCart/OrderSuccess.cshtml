@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "OrderSuccess";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2><u>Thank you For Ordering at <b>Studio Foto45</b></u></h2>
+<p>
+    <b>Your Order Will be delivered in 6-7 Working day</b>. &nbsp;
+    Please Check Your Email For Updates.
+</p>
+
+<div class="form-inline">
+    <h3>
+        Your Order is being Processed.  @Html.ActionLink("Click Here!", "customerOrders", "MyUser",null,new { @class = "btn btn-success"}) for your Orders.
+    </h3>
+    <p>
+        Go Back to @Html.ActionLink("Store Catalogue!", "ProdCatalogue", "Store")
+        <br />
+
+    </p>
+    <p>
+        @Html.ActionLink("Go Back Your Dashboard!", "Index", "MyUser")
+    </p>
+</div>

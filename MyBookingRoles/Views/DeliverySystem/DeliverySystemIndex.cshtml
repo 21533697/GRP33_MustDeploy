@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="jumbotron" style="text-align: center;">
+    <h1><b><u>Shipping Index</u></b></h1>
+</div>
+
+<center>
+    <div class="row">
+        <h2><u>Delivery Management.</u></h2>
+        <p class="col-md-6">
+            @Html.ActionLink("Manage All Delivery Users", "#", "DeliverySystem", null, new { @class = "btn btn-danger" })<br /><br />
+        </p>
+        <p class="col-md-6">
+            @Html.ActionLink("Register New Delivery User", "RegisterDelivery", "DeliverySystem", null, new { @class = "btn btn-primary" })
+        </p>
+    </div>
+    <hr />
+    <div class="row">
+        <h2><u>Delivery Users Information.</u></h2>
+        <p class="col-md-12">
+            <ul>
+                <li>All Delivery Personal</li>
+                <li>Orders And Delivery Personal</li>
+                <li>Delivery Orders List + Status</li>
+                <li></li>
+            </ul>
+        </p>
+    </div>
+</center>
+
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })

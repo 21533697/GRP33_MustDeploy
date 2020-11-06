@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Artist Management Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="jumbotron" style="text-align: center;">
+    <h1><b><u>Artist Management Index</u></b></h1>
+</div>
+
+<center>
+    <div class="row">
+        <h2><u>Artist Management.</u></h2>
+        <p class="col-md-6">
+            @Html.ActionLink("Manage All Artist Users", "#", "BookingManagement", null, new { @class = "btn btn-danger" })
+            <br /><br />
+        </p>
+        <p class="col-md-6">
+            @Html.ActionLink("Register New Artist", "RegisterArtist", "BookingManagement", null, new { @class = "btn btn-primary" })
+            <br /><br />
+        </p>
+    </div>
+    <hr />
+    <div class="row">
+        <h2><u>Artist Users Information.</u></h2>
+        <p class="col-md-12">
+            <ul>
+                <li>All Artist Personal</li>
+                <li>Bookings And Artist bookings</li>
+                <li></li>
+            </ul>
+        </p>
+    </div>
+</center>
+
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })

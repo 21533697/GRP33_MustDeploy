@@ -1,0 +1,62 @@
+﻿@model IEnumerable<MyBookingRoles.Models.RegisterViewModel>
+
+@{
+    ViewBag.Title = "Users With Roles";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="box-title">
+                <b>Users with Roles</b>
+            </h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="panel-body">
+            @*<p>
+                @Html.ActionLink("Add New Role", "Create", "Role") |
+                @Html.ActionLink("Assign Role To User", "RegisterRole", "AppUsers")
+            </p>*@
+
+            <table class="table table-hover table-bordered table-condensed" id="UsersWithRoles">
+                <thead>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td><b>Roles</b></td>
+                    </tr>
+                </thead>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.Email</td>
+                        <td>@user.Name.ToString()</td>
+                    </tr>
+
+                }
+            </table>
+            <hr />
+            <p>
+                @Html.ActionLink("Back To SuperADmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })
+            </p>
+        </div>
+        
+        <div class="panel-footer">
+            <p class="box-title"><b>Total Users till @String.Format("{0 : dddd, MMMM d, yyyy}", DateTime.Now)  : </b><span class="label label-primary">@Model.Count()</span></p>
+        </div>
+    </div>
+
+
+@section scripts{
+    <script>
+        $(function () {
+            $('#UsersWithRoles').DataTable({
+                "paging": true,
+                "lengthChange": true,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": true
+            });
+        });
+    </script>
+} 

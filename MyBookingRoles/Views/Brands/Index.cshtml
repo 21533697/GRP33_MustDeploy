@@ -1,0 +1,44 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Store.Brand>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Add New Brand", "Create")
+</p>
+<table class="table table-bordered table-hover table-condensed" id="UsersWithRoles">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.isVisible)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.isVisible)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.BrandID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.BrandID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.BrandID })
+        </td>
+    </tr>
+}
+
+</table>
+<hr />
+<p>
+    @Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })
+</p>

@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Internals";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="jumbotron" style="text-align: center;">
+    <h1><b><u>Internals Management Index</u></b></h1>
+</div>
+
+<center>
+    <div class="row">
+        <h2><u>Internals Management.</u></h2>
+        <p class="col-md-4">
+            @Html.ActionLink("Manage Packages", "Index", "Packages", null, new { @class = "btn btn-primary" })
+            <br /><br />
+        </p>
+        <p class="col-md-4">
+            @Html.ActionLink("Manage Services", "Index", "Services", null, new { @class = "btn btn-primary" })
+            <br /><br />
+        </p>
+        <p class="col-md-4">
+            @Html.ActionLink("Manage Location", "Index", "Locations", null, new { @class = "btn btn-primary" })
+            <br /><br />
+        </p>
+    </div>
+    <hr />
+    <div class="row">
+        <h2><u>Internals Information.</u></h2>
+        <p class="col-md-12">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </p>
+    </div>
+</center>
+
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })

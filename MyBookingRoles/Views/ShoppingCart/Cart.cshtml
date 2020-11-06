@@ -1,0 +1,109 @@
+﻿@using MyBookingRoles.Models.Store
+@{
+    ViewBag.Title = "Your Shopping Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2><u>Your Shopping Cart : @ViewBag.User</u></h2>
+<br />
+<div class="form-inline">
+    @{
+        decimal s = 0;
+    }
+
+    @if (ViewBag.QError != null)
+    {
+        <p>@ViewBag.QError</p>
+    }
+</div>
+<br />
+<div class="form-inline" id="printdivcontent">
+    @using (Html.BeginForm("Update", "ShoppingCart", FormMethod.Post))
+    {
+        <br />
+        <div class="table table-responsive table-hover table-condensed" style="border:2px solid gray; padding: 5px;">
+            @if ((List<Item>)Session["cart"] != null)
+            {
+                foreach (var item in (List<Item>)Session["cart"])
+                {
+                    s = s + item.Pr.Price * item.Quantity;
+                    <div class="col-md-3" style="border:1px solid black; padding: 5px;">
+                        <div style="background-color: aliceblue;padding: 5px;">
+                            @if (item.Pr.ProductPics != null)
+                            {
+                                var base64 = Convert.ToBase64String(item.Pr.ProductPics);
+                                var imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+
+                                <img src='@imgsrc' class="img-responsive" />
+                            }
+                            <p><u>@item.Pr.ProductName</u></p>
+
+                            <p><b>Price : R @item.Pr.Price</b></p>
+                            <p><input type="text" name="quantity" value="@item.Quantity" class="form-control" /> </p>
+                            <p>
+                                <b><u>Sub Total : R @(item.Pr.Price * item.Quantity)</u></b>
+                            </p>
+                            <p>@Html.ActionLink("Remove Item", "Delete", "ShoppingCart", new { id = item.Pr.ProductID }, new { @class = "btn btn-danger", @onclick = "return confirm('Delete Product From Shopping Cart?');" })</p>
+                        </div>
+
+                    </div>
+
+                }
+                
+            }
+            else
+            {
+                <div class="col-md-6" style="border:1px solid black; padding: 5px;">
+                    <p style="background-color: aliceblue;padding: 5px;">
+                        <h3>Please Add Products To Cart From the Catalogue.</h3>
+                    </p>
+                </div>
+            }
+        </div>
+        <br />
+        <p>
+            <h3 style="background-color: gray;">
+                Total Amount : <b>R @s</b>
+            </h3>
+            <div style="text-align: left; border-top: 2px solid black; background-color:gray; padding: 5px;">
+                <input type="submit" value="Update Quantity" class="btn btn-default btn-primary" />
+            </div>
+        </p>
+    }
+    <hr />
+    <div class="form-inline">
+        @Html.ActionLink("Continue Shopping!", "ProdCatalogue", "Store", null, new { @class = "btn btn-default" }) |
+
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            if (s != 0)
+            {
+                @Html.ActionLink("Check-Out!", "CheckOut", "ShoppingCart", null, new { @class = "btn btn-success" });
+            }
+            else
+            {
+                @Html.ActionLink("Add Items To Your Cart", "ProdCatalogue", "Store", null, new { @class = "btn btn-primary" })
+            }
+        }
+        else
+        {
+            @*<span class="btn btn-danger">You must be Logged in To Check-Out.</span>*@
+            @Html.ActionLink("Please Log in to Check-Out", "Login", "Account", routeValues: null, htmlAttributes: new { @class = "btn btn-danger" })
+
+            @*<button type="button" onclick="PrintDiv();" class="btn btn-default pull-right">Print Order.</button>*@
+        }
+    </div>
+</div>
+@*<script type="text/javascript">
+    function PrintDiv() {
+        var divContents = document.getElementById("printdivcontent").innerHTML;
+        var printWindow = window.open('', '', 'height=800,width=1000');
+        printWindow.document.write('<html><head><title>Print DIV Content</title>');
+        printWindow.document.write('</head><body >');
+        printWindow.document.write(divContents);
+        printWindow.document.write('</body></html>');
+        printWindow.document.close();
+        printWindow.print();
+    }
+</script>*@

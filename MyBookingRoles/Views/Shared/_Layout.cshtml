@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Studio Foto45</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @if (User.IsInRole("Customer"))
+                {
+                    @Html.ActionLink("User Foto45", "Index", "MyUser", new { area = "" }, new { @class = "navbar-brand" })
+                }
+                else if (User.IsInRole("SuperAdmin"))
+                {
+                    @Html.ActionLink("SuperAdmin Foto45", "Index", "SuperAdmin", new { area = "" }, new { @class = "navbar-brand" })
+                }
+                else if (User.IsInRole("Artist"))
+                {
+                    @Html.ActionLink("Artist Foto45", "ArtistDashboard", "Artist", new { area = "" }, new { @class = "navbar-brand" })
+                }
+                else if (User.IsInRole("Delivery"))
+                {
+                    @Html.ActionLink("Delivery Foto45", "DeliveryDashboard", "DeliverySystem", new { area = "" }, new { @class = "navbar-brand" })
+                }
+                else
+                {
+                    @Html.ActionLink("Studio Foto45", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+                }
+            </div>
+            <div class="navbar-collapse collapse">
+                
+                @if (!User.IsInRole("SuperAdmin") && !User.IsInRole("Delivery"))
+                {
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("|", "#", "#")</li>
+                        <li>
+                            <a href="@Url.Action("Cart","ShoppingCart")">
+                                <span class="glyphicon glyphicon-shopping-cart" style="color:Highlight"></span>
+                                Cart
+                                <span class="badge">@Session["count"]</span>
+                            </a>
+                        </li>
+                    </ul>
+                }
+
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content" style="background-color:deepskyblue;padding: 25px; border-radius: 5px; ">
+        @RenderBody()
+    </div>
+    <br />
+    <footer style="background-color: silver; border-radius: 5px;  padding: 15px; margin: 15px;">
+        @{
+            Html.RenderPartial("_Footer");
+        }
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

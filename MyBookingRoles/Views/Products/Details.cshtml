@@ -1,0 +1,114 @@
+﻿@model MyBookingRoles.Models.Store.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+    var base64 = "";
+    var imgsrc = "";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Brand.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductPics)
+        </dt>
+
+        <dd>
+            @if (Model.ProductPics != null)
+            {
+                base64 = Convert.ToBase64String(Model.ProductPics);
+                imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+
+                <img src='@imgsrc' style="width:100px;height:100px" class="img-rounded" />
+            }
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InStoreQuantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InStoreQuantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsVisible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsVisible)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsFeatured)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsFeatured)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsOnSpecial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsOnSpecial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discount)
+        </dd>
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }, new { @class = "btn btn-primary" }) |*@
+    @Html.ActionLink("Back to List", "Index",null, new { @class = "btn btn-primary" })
+</p>
