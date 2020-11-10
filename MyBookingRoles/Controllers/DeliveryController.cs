@@ -22,5 +22,10 @@ namespace MyBookingRoles.Controllers
         {
             return View();
         }
+
+        public ActionResult ApprovedOrders(string searchWord)
+        {
+            return View(context.Orders.Where(p => p.Status == "Approved" && p.CustomerAddress.Contains(searchWord) || searchWord == null).ToList());
+        }
     }
 }

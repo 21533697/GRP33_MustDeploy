@@ -87,7 +87,14 @@
 <div style="text-align:center;">
     
     <hr />
-    @if (User.IsInRole("SuperAdmin"))
+    @if(User.IsInRole("SuperAdmin"))
+    {
+        <p>
+            @Html.ActionLink("Accept Order", "#", new { id = Model.OrderId }, new { @class = "btn btn-danger" })
+            
+        </p>
+    }
+    else if (User.IsInRole("SuperAdmin"))
     {
     <p>
 

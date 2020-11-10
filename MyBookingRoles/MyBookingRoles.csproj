@@ -240,6 +240,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\MyBookingRolesMust.mdf" />
+    <Content Include="App_Data\MyBookingRolesMust_log.ldf">
+      <DependentUpon>MyBookingRolesMust.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -434,6 +438,7 @@
     <Content Include="Views\CustomerBooking\Details.cshtml" />
     <Content Include="Views\CustomerBooking\BookingSuccess.cshtml" />
     <Content Include="Views\Artist\ArtistBookings.cshtml" />
+    <Content Include="Views\Delivery\ApprovedOrders.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -449,7 +454,6 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Documents\Submission Docs\Sprint 02\" />
     <Folder Include="images\Site_Imaes\" />
     <Folder Include="Views\Discount\" />
