@@ -28,7 +28,7 @@ namespace MyBookingRoles.Controllers.Stores
                           orderby d.Category.CategoryName
                           select d.Category.CategoryName;
 
-            ViewBag.prodQ = "";
+            ViewBag.prodQ = 0;
             GenreLst.AddRange(GenreQry.Distinct());
             prodCatLst.AddRange(prodCat.Distinct());
 

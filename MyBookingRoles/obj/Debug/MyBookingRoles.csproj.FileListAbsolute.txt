@@ -3790,8 +3790,6 @@ C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\bin\Microsoft.Ow
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.csprojAssemblyReference.cache
-C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.pro.resources
-C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.csproj.GenerateResource.cache
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.csproj.CoreCompileInputs.cache
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.csproj.CopyComplete
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.dll

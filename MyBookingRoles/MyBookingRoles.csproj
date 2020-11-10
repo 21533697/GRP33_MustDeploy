@@ -218,10 +218,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011020734192_pro.cs" />
-    <Compile Include="Migrations\202011020734192_pro.Designer.cs">
-      <DependentUpon>202011020734192_pro.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BookingModels\Booking.cs" />
@@ -244,10 +240,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\MyBookingRolesMust.mdf" />
-    <Content Include="App_Data\MyBookingRolesMust_log.ldf">
-      <DependentUpon>MyBookingRolesMust.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -457,14 +449,10 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Documents\Submission Docs\Sprint 02\" />
     <Folder Include="images\Site_Imaes\" />
     <Folder Include="Views\Discount\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011020734192_pro.resx">
-      <DependentUpon>202011020734192_pro.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
