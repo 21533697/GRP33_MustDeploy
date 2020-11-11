@@ -208,7 +208,6 @@
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\Stores\BrandsController.cs" />
     <Compile Include="Controllers\Stores\CategoriesController.cs" />
-    <Compile Include="Controllers\Stores\DiscountController.cs" />
     <Compile Include="Controllers\Stores\InventoryController.cs" />
     <Compile Include="Controllers\Stores\OrdersController.cs" />
     <Compile Include="Controllers\Stores\ProductsController.cs" />
@@ -224,6 +223,7 @@
     <Compile Include="Models\BookingModels\Location.cs" />
     <Compile Include="Models\BookingModels\Package.cs" />
     <Compile Include="Models\BookingModels\Service.cs" />
+    <Compile Include="Models\EmailNotif.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PayPal\PaypalConfiguration.cs" />

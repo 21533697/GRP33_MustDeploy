@@ -130,7 +130,9 @@ namespace MyBookingRoles.Controllers.Store
             //Email
             string subject = "Studio Foto45 Purchase Order Details";
             string body = "Dear " + order.CustomerName + ", <br /><br />Order : <b style='color: green'>" + order.OrderName + "</b> Was Successfull! <br />Delivery to -<b>" + order.CustomerAddress + "</b>-</b><br /> Your Order Will be delivered in 6-7 Working day. Please Login to <b>Studio Foto45!</b> for your Orders.<hr /><b style='color: red'>Please Do not reply</b>.<br /> Thanks & Regards, <br /><b>Studio Foto45!</b>";
-            order.SendMail(subject,body);
+
+            
+            //order.SendMail(subject,body);
             
             //Db Saving
             context.Orders.Add(order);
@@ -162,6 +164,9 @@ namespace MyBookingRoles.Controllers.Store
 
             }
 
+            EmailNotif emailNotif = new EmailNotif();
+            emailNotif.sendNotif(order.CustomerEmail, subject, body);
+
             Session.Remove("cart");
             Session.Remove("count");
             return RedirectToAction("OrderSuccess",new { ord = order.OrderName});
@@ -169,9 +174,9 @@ namespace MyBookingRoles.Controllers.Store
         }
 
         [Authorize(Roles = "Customer")]
-        public ActionResult OrderSuccess()
+        public ActionResult OrderSuccess(string ord)
         {
-
+            ViewBag.OrderName = ord;
             return View();
         }
 

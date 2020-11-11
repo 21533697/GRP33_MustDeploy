@@ -137,6 +137,7 @@ namespace MyBookingRoles.Controllers.Stores
             return RedirectToAction("ListIndex");
         }
 
+
         public ActionResult CancelSpecial(int id)
         {
             Product product = db.Products.Find(id);

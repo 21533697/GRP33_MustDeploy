@@ -65,28 +65,29 @@ namespace MyBookingRoles.Models.Store
 
         ///Email Notification///
         ///Please provide all the emails sent to clients in order
-        public void SendMail(string subject,string body)
-        {
-            //Copy from here
-            //Change @Body content
-            string fromEmail = System.Configuration.ConfigurationManager.AppSettings["fromEmail"].ToString();
-            string fromPassword = System.Configuration.ConfigurationManager.AppSettings["fromPassword"].ToString();
+        
+        //public void SendMail(string subject,string body)
+        //{
+        //    //Copy from here
+        //    //Change @Body content
+        //    string fromEmail = System.Configuration.ConfigurationManager.AppSettings["fromEmail"].ToString();
+        //    string fromPassword = System.Configuration.ConfigurationManager.AppSettings["fromPassword"].ToString();
 
-            MailMessage mm = new MailMessage(fromEmail, CustomerEmail);
-            mm.Subject = subject;
-            mm.Body = body;
-            mm.IsBodyHtml = true;
+        //    MailMessage mm = new MailMessage(fromEmail, CustomerEmail);
+        //    mm.Subject = subject;
+        //    mm.Body = body;
+        //    mm.IsBodyHtml = true;
 
-            SmtpClient smtp = new SmtpClient("smtp.office365.com", 587);
-            smtp.Timeout = 100000;
-            smtp.EnableSsl = true;
-            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+        //    SmtpClient smtp = new SmtpClient("smtp.office365.com", 587);
+        //    smtp.Timeout = 100000;
+        //    smtp.EnableSsl = true;
+        //    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
 
-            NetworkCredential nc = new NetworkCredential(fromEmail, fromPassword);
-            smtp.UseDefaultCredentials = false;
-            smtp.Credentials = nc;
+        //    NetworkCredential nc = new NetworkCredential(fromEmail, fromPassword);
+        //    smtp.UseDefaultCredentials = false;
+        //    smtp.Credentials = nc;
 
-            smtp.Send(mm);
-        }
+        //    smtp.Send(mm);
+        //}
     }
 }

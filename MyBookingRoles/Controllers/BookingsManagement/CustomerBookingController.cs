@@ -26,6 +26,7 @@ namespace MyBookingRoles.Controllers.BookingsManagement
             ViewBag.User = id;
             return View(mm);
         }
+
         [Authorize(Roles = "Customer")]
         // GET: Bookings/Create
         public ActionResult MakeBooking()
@@ -65,6 +66,13 @@ namespace MyBookingRoles.Controllers.BookingsManagement
 
                 db.Bookings.Add(booking);
                 db.SaveChanges();
+
+                //Send Notification
+                string subject = booking.ArtistID + " Booking.";
+                string body = "<b>Dear " + booking.UserID + "<br /><br />Your Booking Has Been Booked And Has Sent To <u>Processing</u>. <b /><br />Total Price : R " + booking.TotalDue +"<br /><hr /><b style='color: red'>Please Do not reply</b>.<br /> Thanks & Regards, <br /><b>Studio Foto45!</b>";
+                EmailNotif emailNotif = new EmailNotif();
+                emailNotif.sendNotif(booking.UserID, subject, body);
+
                 return RedirectToAction("BookingSuccess", new { total = booking.TotalDue});
             }
 

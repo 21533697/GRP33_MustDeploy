@@ -8,17 +8,19 @@
     <b>Your Order Will be delivered in 6-7 Working day</b>. &nbsp;
     Please Check Your Email For Updates.
 </p>
-
+<hr />
 <div class="form-inline">
     <h3>
-        Your Order is being Processed.  @Html.ActionLink("Click Here!", "customerOrders", "MyUser",null,new { @class = "btn btn-success"}) for your Orders.
+        Your Order <b><u>@ViewBag.OrderName</u></b> is being Processed. <br /><br /> 
+        @Html.ActionLink("Click Here!", "customerOrders", "MyUser",null,new { @class = "btn btn-success"}) for your Orders.
     </h3>
+
+    <br />
+    <hr />
     <p>
         Go Back to @Html.ActionLink("Store Catalogue!", "ProdCatalogue", "Store")
         <br />
-
-    </p>
-    <p>
-        @Html.ActionLink("Go Back Your Dashboard!", "Index", "MyUser")
+        <br />
+        @Html.ActionLink("Go Back Your Dashboard!", "Index", "MyUser", null, new { @class = "btn btn-primary" })
     </p>
 </div>

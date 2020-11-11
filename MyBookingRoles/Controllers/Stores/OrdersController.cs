@@ -30,8 +30,11 @@ namespace MyBookingRoles.Controllers.Stores
             ord.Status = "Approved";
 
             string subject = ord.OrderName + " Status Update.";
-            string body = "<b>Dear " + ord.CustomerName + "<br /><br />Order : " + ord.OrderName + "<br /><b>Your Order Has Been Approved And Has Sent To Shipping. <b /><br /><br /><hr /><b style='color: red'>Please Do not reply</b>.<br /> Thanks & Regards, <br /><b>Studio Foto45!</b>";
-            ord.SendMail(subject, body);
+            string body = "<b>Dear " + ord.CustomerName + "<br /><br />Order : " + ord.OrderName + "<br /><br /><b>Your Order Has Been Approved And Has Sent To Shipping. <b /><br /><br /><hr /><b style='color: red'>Please Do not reply</b>.<br /> Thanks & Regards, <br /><b>Studio Foto45!</b>";
+
+            //
+            EmailNotif emailNotif = new EmailNotif();
+            emailNotif.sendNotif(ord.CustomerEmail,subject, body);
 
             db.Entry(ord).State = EntityState.Modified;
             db.SaveChangesAsync();

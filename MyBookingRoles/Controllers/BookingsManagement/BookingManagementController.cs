@@ -55,7 +55,7 @@ namespace MyBookingRoles.Controllers.Bookings
         }
 
 
-        // GET: BookingManagement
+        // GET: Booking Management/ Artist Management
         public ActionResult BookingManagementIndex()
         {
             return View();
