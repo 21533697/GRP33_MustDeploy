@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MyBookingRoles.Models.EmailNotif>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Notif Index</h2>
+
+<table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Notif_Subject)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Notif_Body)
+            </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Notif_To)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notif_Date)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notif_Subject)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Notif_Body)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Notif_To)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notif_Date)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.Notif_Id }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Delete Notif", "DeleteNotif", new { id = item.Notif_Id }, new { @class = "btn btn-danger", @onclick = "return confirm('Are you sure you want to delete this Notif?');" })
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })

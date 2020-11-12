@@ -6,11 +6,26 @@ using System.Net;
 using System.Net.Mail;
 using Microsoft.Ajax.Utilities;
 using Twilio.Rest.Notify.V1.Service;
+using System.ComponentModel.DataAnnotations;
 
 namespace MyBookingRoles.Models
 {
     public class EmailNotif
     {
+        //
+        //Attributes
+        [Key]
+        public int Notif_Id { get; set; }
+        public string Notif_Subject { get; set; }
+        public string Notif_Body { get; set; }
+        public string Notif_To { get; set; }
+
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        public DateTime Notif_Date { get; set; }
+
+        private ApplicationDbContext db = new ApplicationDbContext();
+
         public void sendNotif(string to, string subject, string body)
         {
 
@@ -32,6 +47,19 @@ namespace MyBookingRoles.Models
             smtp.Credentials = nc;
 
             smtp.Send(mm);
+
+            //
+            //Savechanges();
+            EmailNotif emailNotif = new EmailNotif
+            {
+                Notif_To = to,
+                Notif_Subject = subject,
+                Notif_Body = body,
+                Notif_Date = DateTime.Now
+            };
+
+            db.EmailNotifs.Add(emailNotif);
+            db.SaveChanges();
         }
     }
 }

@@ -3915,3 +3915,5 @@ C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyB
 C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.csproj.CopyComplete
 C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.dll
 C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.pdb
+C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.EmailNot.resources
+C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.csproj.GenerateResource.cache

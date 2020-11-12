@@ -201,6 +201,7 @@
     <Compile Include="Controllers\BookingsManagement\CustomerBookingController.cs" />
     <Compile Include="Controllers\DeliveryController.cs" />
     <Compile Include="Controllers\DeliverySystem\DeliverySystemController.cs" />
+    <Compile Include="Controllers\Email_NotifsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MyUserController.cs" />
@@ -216,6 +217,10 @@
     <Compile Include="Controllers\SuperAdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011121443226_EmailNot.cs" />
+    <Compile Include="Migrations\202011121443226_EmailNot.designer.cs">
+      <DependentUpon>202011121443226_EmailNot.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -439,6 +444,8 @@
     <Content Include="Views\CustomerBooking\BookingSuccess.cshtml" />
     <Content Include="Views\Artist\ArtistBookings.cshtml" />
     <Content Include="Views\Delivery\ApprovedOrders.cshtml" />
+    <Content Include="Views\Email_Notifs\Index.cshtml" />
+    <Content Include="Views\Email_Notifs\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -457,6 +464,11 @@
     <Folder Include="Documents\Submission Docs\Sprint 02\" />
     <Folder Include="images\Site_Imaes\" />
     <Folder Include="Views\Discount\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202011121443226_EmailNot.resx">
+      <DependentUpon>202011121443226_EmailNot.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
