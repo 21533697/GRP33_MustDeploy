@@ -46,10 +46,8 @@ namespace MyBookingRoles.Controllers
             Order ord = context.Orders.Find(id);
             ord.Status = "Cancelled";
 
-            string subject = ord.OrderName + " Status Update.";
+            string subject = ord.OrderName + " Order Status Update.";
             string body = "<b>Dear " + ord.CustomerName + "<br /><br />Order : " + ord.OrderName + " <b />Your Order Has Been Cancelled. <br /><br /><hr /><b style='color: red'>Please Do not reply</b>.<br /> Thanks & Regards, <br /><b>Studio Foto45!</b>";
-            
-            //ord.SendMail(subject, body);
             
             EmailNotif emailNotif = new EmailNotif();
             emailNotif.sendNotif(ord.CustomerEmail, subject, body);

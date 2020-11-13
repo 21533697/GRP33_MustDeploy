@@ -26,9 +26,22 @@ namespace MyBookingRoles.Controllers
         // GET: Artist All Artist Bookings
         public ActionResult ArtistBookings(string searchWord)
         {
+            ViewBag.AllCArtBookings = "";
+            ViewBag.AllAArtBookings = "";
+            ViewBag.AllCoArtBookings = "";
+
             var id = User.Identity.GetUserName().ToString();
-            var mm = db.Bookings.Where(v => v.ArtistID == id && (v.Status.Contains(searchWord) || searchWord == null) && v.Status != "Artist_Cancelled").ToList();
-            ViewBag.User = id;
+            var mm = db.Bookings.Where(v => v.ArtistID == id && (v.Status.Contains(searchWord) || searchWord == null) && v.Status != "Artist_Cancelled" && v.Status != "Processing").ToList();
+            
+            //ViewBag.User = id;
+            if(mm != null)
+            {
+                ViewBag.AllCArtBookings = mm.Count(v => v.Status.Contains("Cancelled"));
+                ViewBag.AllAArtBookings = mm.Count(v => v.Status.Contains("Approved"));
+                ViewBag.AllCoArtBookings = mm.Count(v => v.Status.Contains("Completed"));
+            }
+            
+
             return View(mm);
         }
         public ActionResult ArtCancelBooking(int id)
@@ -36,14 +49,20 @@ namespace MyBookingRoles.Controllers
             Booking ord = db.Bookings.Find(id);
             ord.Status = "Artist_Cancelled";
 
-            //string subject = ord.OrderName + " Status Update.";
-            //string body = "<b>Dear " + ord.CustomerName + "<br /><br />Order : " + ord.OrderName + " Your Order Has Been Cancelled. <b /><br /><br /><hr /><b style='color: red'>Please Do not reply</b>.<br /> Thanks & Regards, <br /><b>Studio Foto45!</b>";
-            //ord.SendMail(subject, body);
-
             db.Entry(ord).State = EntityState.Modified;
             db.SaveChangesAsync();
 
-            return RedirectToAction("ArtistBookings","Artist");
+            return RedirectToAction("CancellationR", new { Bid = id, ArtId = ord.ArtistID});
+        }
+
+        //Create approve booking in Admin
+        //Approve has been created
+        public ActionResult CancellationR(int Bid, string ArtId)
+        {
+            ViewBag.BookingId = Bid.ToString();
+            ViewBag.ArtistId = ArtId.ToString();
+
+            return View();
         }
     }
 }

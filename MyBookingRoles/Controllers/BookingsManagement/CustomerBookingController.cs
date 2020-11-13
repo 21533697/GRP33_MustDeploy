@@ -68,6 +68,7 @@ namespace MyBookingRoles.Controllers.BookingsManagement
                 db.SaveChanges();
 
                 //Send Notification
+                //Change To Notify SuperAdmin
                 string subject = booking.ArtistID + " Booking.";
                 string body = "<b>Dear " + booking.UserID + "<br /><br />Your Booking Has Been Booked And Has Sent To <u>Processing</u>. <b /><br />Total Price : R " + booking.TotalDue +"<br /><hr /><b style='color: red'>Please Do not reply</b>.<br /> Thanks & Regards, <br /><b>Studio Foto45!</b>";
                 EmailNotif emailNotif = new EmailNotif();
@@ -104,6 +105,8 @@ namespace MyBookingRoles.Controllers.BookingsManagement
             }
             return View(booking);
         }
+
+
         [Authorize(Roles = "Customer")]
         public ActionResult CancelBooking(int id)
         {
@@ -116,6 +119,13 @@ namespace MyBookingRoles.Controllers.BookingsManagement
 
             db.Entry(ord).State = EntityState.Modified;
             db.SaveChangesAsync();
+
+            //Send Notification
+            //Change To Notify SuperAdmin
+            string subject = ord.ArtistID + " Booking.";
+            string body = "<b>Dear " + ord.UserID + "<br /><br />Your Booking Has Been <u>"+ ord.Status +"</u>. <b /><br /><hr /><b style='color: red'>Please Do not reply</b>.<br /> Thanks & Regards, <br /><b>Studio Foto45!</b>";
+            EmailNotif emailNotif = new EmailNotif();
+            emailNotif.sendNotif(ord.UserID, subject, body);
 
             return RedirectToAction("customerBookings", new { id = ord.BookingID });
         }

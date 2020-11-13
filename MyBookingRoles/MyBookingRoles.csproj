@@ -446,6 +446,7 @@
     <Content Include="Views\Delivery\ApprovedOrders.cshtml" />
     <Content Include="Views\Email_Notifs\Index.cshtml" />
     <Content Include="Views\Email_Notifs\Details.cshtml" />
+    <Content Include="Views\Artist\CancellationR.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

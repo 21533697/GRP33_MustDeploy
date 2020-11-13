@@ -1,12 +1,15 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using MyBookingRoles.Models;
+using MyBookingRoles.Models.BookingModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.Entity;
 
 namespace MyBookingRoles.Controllers.Bookings
 {
@@ -105,6 +108,39 @@ namespace MyBookingRoles.Controllers.Bookings
             // If we got this far, something failed, redisplay form
             return View(model);
         }
+
+        public ActionResult ApproveBooking(int id)
+        {
+            var addressLo = "";
+
+            Booking book = context.Bookings.Find(id);
+            book.Status = "Approved";
+
+            //Get Location Type FOR Client to 
+            //Add Address Of the Booking Job
+
+
+            //Send Email To Artist
+            string subject = book.ArtistID + " Booking Status Update.";
+            string body = "<b>Dear " + book.UserID + "<br /><br />Booking For Artist : " + book.ArtistID + "<br /><br /><b>Has Been "+ book.Status +", And Has Been Notified. <b /><br /><br /><hr /><b style='color: red'>Please Do not reply</b>.<br /> Thanks & Regards, <br /><b>Studio Foto45!</b>";
+
+            //
+            EmailNotif emailNotif = new EmailNotif();
+            emailNotif.sendNotif(book.UserID, subject, body);
+
+            context.Entry(book).State = EntityState.Modified;
+            context.SaveChangesAsync();
+
+            return RedirectToAction("Index","Bookings", new { id = book.BookingID });
+        }
+
+
+
+
+
+
+
+
 
 
         private void AddErrors(IdentityResult result)
