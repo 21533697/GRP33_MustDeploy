@@ -52,7 +52,7 @@ namespace MyBookingRoles.Controllers
             db.Entry(ord).State = EntityState.Modified;
             db.SaveChangesAsync();
 
-            return RedirectToAction("CancellationR", new { Bid = id, ArtId = ord.ArtistID});
+            return RedirectToAction("CancellationR", new { Bid = ord.BookingID, ArtId = ord.ArtistID});
         }
 
         //Create approve booking in Admin
@@ -61,6 +61,8 @@ namespace MyBookingRoles.Controllers
         {
             ViewBag.BookingId = Bid.ToString();
             ViewBag.ArtistId = ArtId.ToString();
+            Booking book = db.Bookings.Find(Bid);
+
 
             return View();
         }

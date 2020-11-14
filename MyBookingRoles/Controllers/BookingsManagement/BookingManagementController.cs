@@ -64,6 +64,13 @@ namespace MyBookingRoles.Controllers.Bookings
             return View();
         }
 
+        public ActionResult AllArtists()
+        {
+            var vv = context.Users.Where(n => n.Name.Contains("Artist"));
+
+            return View(vv.ToList());
+        }
+
         //Register Artist roles moved to AppUsers
         // GET: /Account/Register
         //[AllowAnonymous]

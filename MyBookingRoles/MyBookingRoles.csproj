@@ -199,6 +199,7 @@
     <Compile Include="Controllers\BookingDir\PackagesController.cs" />
     <Compile Include="Controllers\BookingDir\ServicesController.cs" />
     <Compile Include="Controllers\BookingsManagement\CustomerBookingController.cs" />
+    <Compile Include="Controllers\CustSupportController.cs" />
     <Compile Include="Controllers\DeliveryController.cs" />
     <Compile Include="Controllers\DeliverySystem\DeliverySystemController.cs" />
     <Compile Include="Controllers\Email_NotifsController.cs" />
@@ -222,12 +223,29 @@
     <Compile Include="Migrations\202011121443226_EmailNot.designer.cs">
       <DependentUpon>202011121443226_EmailNot.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011131145018_CustSupportClass.cs" />
+    <Compile Include="Migrations\202011131145018_CustSupportClass.designer.cs">
+      <DependentUpon>202011131145018_CustSupportClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011131239078_CustSupport.cs" />
+    <Compile Include="Migrations\202011131239078_CustSupport.designer.cs">
+      <DependentUpon>202011131239078_CustSupport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011131302152_CustSup.cs" />
+    <Compile Include="Migrations\202011131302152_CustSup.designer.cs">
+      <DependentUpon>202011131302152_CustSup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011131951103_Check_up.cs" />
+    <Compile Include="Migrations\202011131951103_Check_up.designer.cs">
+      <DependentUpon>202011131951103_Check_up.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BookingModels\Booking.cs" />
     <Compile Include="Models\BookingModels\Location.cs" />
     <Compile Include="Models\BookingModels\Package.cs" />
     <Compile Include="Models\BookingModels\Service.cs" />
+    <Compile Include="Models\CustomerSupport.cs" />
     <Compile Include="Models\EmailNotif.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -447,6 +465,11 @@
     <Content Include="Views\Email_Notifs\Index.cshtml" />
     <Content Include="Views\Email_Notifs\Details.cshtml" />
     <Content Include="Views\Artist\CancellationR.cshtml" />
+    <Content Include="Views\CustSupport\AddCustomerSupp.cshtml" />
+    <Content Include="Views\CustSupport\CustomerSuppSuccess.cshtml" />
+    <Content Include="Views\CustSupport\Index.cshtml" />
+    <Content Include="Views\CustSupport\Details.cshtml" />
+    <Content Include="Views\BookingManagement\AllArtists.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -464,11 +487,22 @@
   <ItemGroup>
     <Folder Include="Documents\Submission Docs\Sprint 02\" />
     <Folder Include="images\Site_Imaes\" />
-    <Folder Include="Views\Discount\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202011121443226_EmailNot.resx">
       <DependentUpon>202011121443226_EmailNot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011131145018_CustSupportClass.resx">
+      <DependentUpon>202011131145018_CustSupportClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011131239078_CustSupport.resx">
+      <DependentUpon>202011131239078_CustSupport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011131302152_CustSup.resx">
+      <DependentUpon>202011131302152_CustSup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011131951103_Check_up.resx">
+      <DependentUpon>202011131951103_Check_up.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

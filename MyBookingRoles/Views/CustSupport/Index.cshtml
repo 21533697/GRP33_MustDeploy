@@ -1,0 +1,67 @@
+﻿@model IEnumerable<MyBookingRoles.Models.CustomerSupport>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2><u>Customer Support List</u></h2>
+<br />
+<br />
+<p>
+    @Html.ActionLink("Add New", "AddCustomerSupp",null, new { @class = "btn btn-default" })
+</p>
+<br />
+<table class="table table-responsive table-hover table-condensed">
+    <tr style="text-align:center;">
+        <th>
+            @Html.DisplayNameFor(model => model.Cs_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cs_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cs_Issue)
+        </th>
+        <th style="background-color: gray;">Options</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cs_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cs_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cs_Issue)
+        </td>
+        <td style="background-color: gray;">
+            @if (User.IsInRole("Customer"))
+            {
+                <p>
+                    @*@Html.ActionLink("Edit", "Edit", new { id = item.Cs_Id }, new { @class = "btn btn-default" }) |*@
+                
+                    @Html.ActionLink("See Details", "Details", new { id = item.Cs_Id }, new { @class = "btn btn-primary" }) |
+
+                    @Html.ActionLink("Delete Isse", "Delete", new { id = item.Cs_Id }, new { @class = "btn btn-danger" })
+                </p>
+            }
+            else if (User.IsInRole("SuperAdmin"))
+            {
+                <p>
+                    @Html.ActionLink("Details", "Details", new { id = item.Cs_Id }, new { @class = "btn btn-primary" }); |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Cs_Id }, new { @class = "btn btn-danger", @onclick = "return confirm('Are you sure you want to Delete this Issue?');" } )
+                </p>
+            }
+        </td>
+    </tr>
+}
+
+</table>
+<hr />
+<p style="text-align:center">
+    @Html.ActionLink("Back to  Home Page", "Index", "Home", null, new { @class = "btn btn-default" }) | 
+    @Html.ActionLink("Back to  Dashboard", "Index", "MyUser", null, new { @class = "btn btn-primary" })
+</p>

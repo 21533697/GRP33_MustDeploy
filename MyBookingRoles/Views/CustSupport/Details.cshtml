@@ -1,0 +1,41 @@
+﻿@model MyBookingRoles.Models.CustomerSupport
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div>
+    <h2>Customer Support Details</h2>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cs_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cs_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cs_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cs_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cs_Issue)
+        </dt>
+
+        <dd>
+            <b>@Html.DisplayFor(model => model.Cs_Issue)</b>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Delete This Issue", "Delete", new { id = Model.Cs_Id }, new { @class = "btn btn-danger" })
+</p>

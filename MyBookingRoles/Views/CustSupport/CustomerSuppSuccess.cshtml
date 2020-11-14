@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Customer Support Success";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Customer Support Success</h2>
+
+<hr />
+
+<div class="container">
+    <h2><u>Thank You for you Input, @ViewBag.CustName.</u></h2><br /><br />
+    <b>We will Contact you at : @ViewBag.CustEmail, Enjoy Life!</b>
+
+    <br /><br />
+    <p style="text-align:center;">
+        Regards &hearts; Studio Foto45!
+    </p>
+    <br />
+    @if (User.Identity.IsAuthenticated)
+    {
+        @Html.ActionLink("Go Customer Support", "Index", "CustSupport", null, new { @class = "btn btn-default" })
+    }
+</div>
+<hr />
+<p style="text-align:center;">
+    @Html.ActionLink("Back to  Home Page", "Index", "Home", null, new { @class = "btn btn-default" })
+</p>

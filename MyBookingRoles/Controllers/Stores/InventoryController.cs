@@ -35,29 +35,52 @@ namespace MyBookingRoles.Controllers.Stores
             ViewBag.movieGenre = new SelectList(GenreLst);
             ViewBag.prodCategory = new SelectList(prodCatLst);
 
-            var movies = from m in db.Products
+            //
+            var product = from m in db.Products
                          select m;
-
+            
+            
+            //
             ViewBag.prodQ = db.Products.Sum(m => m.InStoreQuantity);
+            ViewBag.prodD = Deple();
+            ViewBag.prodO = Depleted();
 
+
+            //
             if (!String.IsNullOrEmpty(searchWord))
             {
-                movies = movies.Where(s => s.ProductName.Contains(searchWord));
+                product = product.Where(s => s.ProductName.Contains(searchWord));
             }
 
             if (!string.IsNullOrEmpty(movieGenre))
             {
-                movies = movies.Where(x => x.Brand.Name == movieGenre);
+                product = product.Where(x => x.Brand.Name == movieGenre);
             }
 
             if (!string.IsNullOrEmpty(prodCategory))
             {
-                movies = movies.Where(x => x.Category.CategoryName == prodCategory);
+                product = product.Where(x => x.Category.CategoryName == prodCategory);
             }
 
-            return View(movies);
+            return View(product);
+        }
 
-            //return View(db.Products.ToList());
+        public int Deple()
+        {
+            var deplete = from p in db.Products
+                        where p.InStoreQuantity < 100
+                        select p;
+            int cc = deplete.Count();
+            return cc;
+        }
+
+        public int Depleted()
+        {
+            var depletd = from p in db.Products
+                           where p.InStoreQuantity == 0
+                           select p;
+            int cr = depletd.Count();
+            return cr;
         }
 
         // GET: Inventory AddQuantity

@@ -56,6 +56,7 @@ namespace MyBookingRoles.Models
         public virtual DbSet<BookingModels.Package> Packages { get; set; }
 
         public virtual DbSet<EmailNotif> EmailNotifs { get; set; }
+        public virtual DbSet<CustomerSupport> CustomerSupports { get; set; }
         //Rate_Service
         public DbSet<RateService.Rates> Rates { get; set; }
         public DbSet<RateService.Rate_Service> Rate_Services { get; set; }

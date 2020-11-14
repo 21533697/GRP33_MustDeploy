@@ -3917,3 +3917,7 @@ C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyB
 C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.pdb
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.EmailNot.resources
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.csproj.GenerateResource.cache
+C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.CustSupportClass.resources
+C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.CustSupport.resources
+C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.CustSup.resources
+C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.Check_up.resources

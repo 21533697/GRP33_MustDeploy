@@ -146,7 +146,7 @@
     @if (User.IsInRole("Customer"))
     {
         <p>
-            @Html.ActionLink("Cancel Booking", "CancelBooking", new { id = Model.BookingID }, new { @class = "btn btn-danger" }) |
+            @Html.ActionLink("Cancel Booking", "CancelBooking", new { id = Model.BookingID }, new { @class = "btn btn-danger", @onclick = "return confirm('Are you sure you want to Cancel this Booking?');" }) |
             |
             @Html.ActionLink("Bookings List", "customerBookings", null, new { @class = "btn btn-primary" })
         </p>
@@ -154,7 +154,7 @@
     else if(User.IsInRole("Artist"))
     {
         <p>
-           @Html.ActionLink("Artist Cancel", "ArtCancelBooking", "Artist", new { id = Model.BookingID }, new { @class = "btn btn-danger" })
+           @Html.ActionLink("Artist Cancel", "ArtCancelBooking", "Artist", new { id = Model.BookingID }, new { @class = "btn btn-danger", @onclick = "return confirm('Are you sure you want to Cancel this Booking?');" })
            |
             @Html.ActionLink("Bookings List", "ArtistBookings", "Artist", null, new { @class = "btn btn-primary" })
 

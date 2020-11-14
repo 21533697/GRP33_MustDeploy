@@ -123,10 +123,9 @@ namespace MyBookingRoles.Controllers
         }
 
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         public ActionResult ConfirmDelete(string id)
         {
-            var sur = _application.Users.Find(id);
+            ApplicationUser sur = _application.Users.Find(id);
             _application.Users.Remove(sur);
             _application.SaveChanges();
             return RedirectToAction("Index");
