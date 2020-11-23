@@ -19,8 +19,14 @@ namespace MyBookingRoles.Controllers
             if(User.Identity.IsAuthenticated)
             {
                 var id = User.Identity.GetUserName().ToString();
-                
-                return View(db.CustomerSupports.Where(v=>v.Cs_Email == id));
+                var model = from d in db.CustomerSupports
+                            select d;
+                if(!User.IsInRole("SuperAdmin"))
+                {
+                    model = model.Where(v => v.Cs_Email == id);
+                }
+
+                return View(model.ToList());
             }
             else
             {

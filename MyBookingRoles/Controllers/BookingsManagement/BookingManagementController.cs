@@ -118,7 +118,7 @@ namespace MyBookingRoles.Controllers.Bookings
 
         public ActionResult ApproveBooking(int id)
         {
-            var addressLo = "";
+            //var addressLo = "";
 
             Booking book = context.Bookings.Find(id);
             book.Status = "Approved";
