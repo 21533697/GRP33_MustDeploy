@@ -1,4 +1,5 @@
 ﻿using MyBookingRoles.Models;
+using MyBookingRoles.Models.BookingModels;
 using MyBookingRoles.Models.Store;
 using System;
 using System.Collections.Generic;
@@ -60,6 +61,33 @@ namespace MyBookingRoles.Controllers
             ViewBag.Message = "Our Store Details Special page.";
             return View();
         }
+
+
+
+
+
+        //
+        public ActionResult ComingEvents()
+        {
+            ViewBag.Message = "Up-Coming Events Page";
+            return View();
+        }
+
+        public JsonResult GetEvents()
+        {
+            var events = from d in context.Bookings
+                         where d.Status == "Approved"
+                         select new SchedEvents
+                         {
+                             Sr = d.BookingID,
+                             Title = d.ArtistID,
+                             Desc = d.Status,
+                             Start_Date = d.Date,
+                         };
+
+            return new JsonResult { Data = events, JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+        }
+
         //
         protected override void Dispose(bool disposing)
         {

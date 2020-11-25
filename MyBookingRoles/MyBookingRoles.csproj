@@ -244,6 +244,7 @@
     <Compile Include="Models\BookingModels\Booking.cs" />
     <Compile Include="Models\BookingModels\Location.cs" />
     <Compile Include="Models\BookingModels\Package.cs" />
+    <Compile Include="Models\BookingModels\SchedEvents.cs" />
     <Compile Include="Models\BookingModels\Service.cs" />
     <Compile Include="Models\CustomerSupport.cs" />
     <Compile Include="Models\EmailNotif.cs" />
@@ -386,7 +387,6 @@
     <Content Include="Views\Categories\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\StoreDetails.cshtml" />
     <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
     <Content Include="Views\Manage\ChangePassword.cshtml" />
     <Content Include="Views\Manage\Index.cshtml" />
@@ -470,6 +470,7 @@
     <Content Include="Views\CustSupport\Index.cshtml" />
     <Content Include="Views\CustSupport\Details.cshtml" />
     <Content Include="Views\BookingManagement\AllArtists.cshtml" />
+    <Content Include="Views\Home\ComingEvents.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
