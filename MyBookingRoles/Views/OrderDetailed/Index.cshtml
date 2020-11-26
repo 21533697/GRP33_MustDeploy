@@ -39,7 +39,7 @@
         <th>
             @Html.DisplayNameFor(model => model.DateOrdered)
         </th>
-        @*<th></th>*@
+        <th></th>
     </tr>
 
     @foreach (var item in Model)
@@ -63,11 +63,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.DateOrdered)
             </td>
-            @*<td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.OrderDetailsId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.OrderDetailsId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.OrderDetailsId })
-                </td>*@
+            <td></td>
         </tr>
     }
 

@@ -255,6 +255,7 @@
     <Compile Include="Models\BookingModels\Package.cs" />
     <Compile Include="Models\BookingModels\SchedEvents.cs" />
     <Compile Include="Models\BookingModels\Service.cs" />
+    <Compile Include="Models\ChartsDataModels\SaleProductQuantity.cs" />
     <Compile Include="Models\CustomerSupport.cs" />
     <Compile Include="Models\EmailNotif.cs" />
     <Compile Include="Models\IdentityModels.cs" />

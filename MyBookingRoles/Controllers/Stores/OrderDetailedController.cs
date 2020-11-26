@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using MyBookingRoles.Models;
 using MyBookingRoles.Models.Store;
+using MyBookingRoles.Models.ChartsDataModels;
 
 namespace MyBookingRoles.Controllers.Stores
 {

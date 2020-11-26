@@ -3,6 +3,7 @@ using MyBookingRoles.Models;
 using MyBookingRoles.Models.Store;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -58,6 +59,28 @@ namespace MyBookingRoles.Controllers
         {
             var id = User.Identity.GetUserName().ToString();
             return View(context.deliveryJobs.Where(p=>p.DeliveryPersonId == id).ToList());
+        }
+
+        //Adjust to download File
+        public ActionResult Invoice(int? id)
+        {
+            DeliveryJob job = context.deliveryJobs.Find(id);
+            int JobOrdId = job.OrderId;
+
+            if (JobOrdId != 0)
+            {
+                //Implement Invoice Download
+                var invoiceFile = "";
+
+                //Update
+                job.InvoicePdf = invoiceFile;
+                job.InvoiceDownloaded = true;
+
+                //
+                context.Entry(job).State = EntityState.Modified;
+                context.SaveChangesAsync();
+            }
+            return RedirectToAction("MakeDelivery", new { id = job.JobId });
         }
     }
 }

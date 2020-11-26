@@ -30,7 +30,9 @@
         <th>
             @Html.DisplayNameFor(model => model.DeliveryDate)
         </th>
-        <th></th>
+        <th>
+            Invoice Document
+        </th>
     </tr>
 
     @foreach (var item in Model)
@@ -58,9 +60,7 @@
                 @Html.DisplayFor(modelItem => item.DeliveryDate)
             </td>
             <td>
-                @*@Html.ActionLink("Edit", "Edit", new { id = item.JobId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.JobId }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.JobId })*@
+                @Html.ActionLink("Invoice", "Invoice", new { id = item.JobId },new { @class="btn btn-primary"})
             </td>
         </tr>
     }
