@@ -3921,3 +3921,11 @@ C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBook
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.CustSupport.resources
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.CustSup.resources
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.Check_up.resources
+C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.EmailNot.resources
+C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.CustSupportClass.resources
+C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.CustSupport.resources
+C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.CustSup.resources
+C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.Check_up.resources
+C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.csproj.GenerateResource.cache
+C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.Job.resources
+C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.Jobnull.resources

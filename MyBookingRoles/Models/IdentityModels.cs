@@ -60,6 +60,7 @@ namespace MyBookingRoles.Models
         //Rate_Service
         public DbSet<RateService.Rates> Rates { get; set; }
         public DbSet<RateService.Rate_Service> Rate_Services { get; set; }
+        public DbSet<Store.DeliveryJob> deliveryJobs { get; set; }
 
     }
 }

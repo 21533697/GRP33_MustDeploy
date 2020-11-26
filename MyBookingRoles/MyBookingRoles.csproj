@@ -240,6 +240,14 @@
     <Compile Include="Migrations\202011131951103_Check_up.designer.cs">
       <DependentUpon>202011131951103_Check_up.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011261421117_Job.cs" />
+    <Compile Include="Migrations\202011261421117_Job.designer.cs">
+      <DependentUpon>202011261421117_Job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202011261429512_Job null.cs" />
+    <Compile Include="Migrations\202011261429512_Job null.designer.cs">
+      <DependentUpon>202011261429512_Job null.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BookingModels\Booking.cs" />
@@ -256,6 +264,7 @@
     <Compile Include="Models\RateService\Rate_Service.cs" />
     <Compile Include="Models\Store\Brand.cs" />
     <Compile Include="Models\Store\Category.cs" />
+    <Compile Include="Models\Store\DeliveryJob.cs" />
     <Compile Include="Models\Store\Item.cs" />
     <Compile Include="Models\Store\Logger.cs" />
     <Compile Include="Models\Store\Order.cs" />
@@ -473,6 +482,7 @@
     <Content Include="Views\BookingManagement\AllArtists.cshtml" />
     <Content Include="Views\Home\ComingEvents.cshtml" />
     <Content Include="Views\OrderDetailed\Index.cshtml" />
+    <Content Include="Views\Delivery\MakeDelivery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -506,6 +516,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011131951103_Check_up.resx">
       <DependentUpon>202011131951103_Check_up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011261421117_Job.resx">
+      <DependentUpon>202011261421117_Job.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011261429512_Job null.resx">
+      <DependentUpon>202011261429512_Job null.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

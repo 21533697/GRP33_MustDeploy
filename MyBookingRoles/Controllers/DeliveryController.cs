@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNet.Identity;
 using MyBookingRoles.Models;
+using MyBookingRoles.Models.Store;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,30 +23,41 @@ namespace MyBookingRoles.Controllers
         // GET: Delivery All Delivery Jobs Approved
         public ActionResult ApprovedOrders(string searchWord)
         {
-            return View(context.Orders.Where(p => p.Status == "Approved" || p.CustomerAddress.Contains(searchWord) || searchWord == null).ToList());
+            //variable to hold all conditions
+            //|| p.CustomerAddress.Contains(searchWord) || searchWord == null
+            return View(context.Orders.Where(p => p.Status == "Approved").ToList());
         }
 
         // Get : AcceptOrder
-        [HttpPost]
         public ActionResult AcceptOrder(int id)
         {
             var deliverId = User.Identity.GetUserName().ToString();
 
-            if(deliverId != null)
+            //Create Job Class
+            //Attr: JobId,OrderId,DeliveryPerson,
+            //Attr: InvoicePdf,InvoiceDownloaded,JobStatus,
+            //Attr: AcceptedDate,DeliveryDate
+            DeliveryJob job = new DeliveryJob()
             {
-                //Create Job Class
-                //Attr: JobId,OrderId,DeliveryPerson,
-                //Attr: InvoicePdf,InvoiceDownloaded,JobStatus,
-                //Attr: AcceptedDate,DeliveryDate
+                OrderId = id,
+                DeliveryPersonId = deliverId,
+                InvoicePdf = "Not Downloaded",
+                InvoiceDownloaded = false,
+                Status = "Order Accepted",
+                AcceptedDate = DateTime.Now,
+                DeliveryDate = null
+            };
+            //Save Changes To Database
+            context.deliveryJobs.Add(job);
+            context.SaveChanges();
 
-                //Save Changes To Database
+            return RedirectToAction("ApprovedOrders", "Delivery");
+        }
 
-                return RedirectToAction("ApprovedOrders");
-            }
-            else
-            {
-                return RedirectToAction("Details","Orders");
-            }
+        public ActionResult MakeDelivery()
+        {
+            var id = User.Identity.GetUserName().ToString();
+            return View(context.deliveryJobs.Where(p=>p.DeliveryPersonId == id).ToList());
         }
     }
 }
