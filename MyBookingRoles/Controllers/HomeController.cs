@@ -62,10 +62,6 @@ namespace MyBookingRoles.Controllers
             return View();
         }
 
-
-
-
-
         //
         public ActionResult ComingEvents()
         {

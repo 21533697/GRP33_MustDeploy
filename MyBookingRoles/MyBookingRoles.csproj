@@ -211,6 +211,7 @@
     <Compile Include="Controllers\Stores\BrandsController.cs" />
     <Compile Include="Controllers\Stores\CategoriesController.cs" />
     <Compile Include="Controllers\Stores\InventoryController.cs" />
+    <Compile Include="Controllers\Stores\OrderDetailedController.cs" />
     <Compile Include="Controllers\Stores\OrdersController.cs" />
     <Compile Include="Controllers\Stores\ProductsController.cs" />
     <Compile Include="Controllers\Stores\ShoppingCartController.cs" />
@@ -471,6 +472,7 @@
     <Content Include="Views\CustSupport\Details.cshtml" />
     <Content Include="Views\BookingManagement\AllArtists.cshtml" />
     <Content Include="Views\Home\ComingEvents.cshtml" />
+    <Content Include="Views\OrderDetailed\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

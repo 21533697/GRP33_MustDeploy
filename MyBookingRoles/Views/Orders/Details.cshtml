@@ -90,7 +90,7 @@
     @if(User.IsInRole("Delivery"))
     {
         <p>
-            @Html.ActionLink("Accept Order", "#", new { id = Model.OrderId }, new { @class = "btn btn-danger" })
+            @Html.ActionLink("Accept Order", "AcceptOrder", "Delivery", new { id = Model.OrderId }, new { @class = "btn btn-danger" })
         </p>
     }
     else if (User.IsInRole("SuperAdmin"))
@@ -118,7 +118,7 @@
     }
 </div>
 
-<hr />
+@*<hr />
 <p>
     <h2>To Do List</h2>
     <ul>
@@ -126,4 +126,4 @@
         <li>Have notification for each process.</li>
         <li>Have notification for status changes</li>
     </ul>
-</p>
+</p>*@

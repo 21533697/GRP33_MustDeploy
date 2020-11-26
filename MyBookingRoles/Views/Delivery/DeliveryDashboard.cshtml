@@ -22,8 +22,10 @@
         <div class="col-md-3 col-md-9" style="border-right: 1px solid black;">
             <h2 style="border: 1px solid black; text-align: center; background-color: white;"><u>Artist Menu</u></h2>
             <br />
-            @Html.ActionLink("#", "#", "#", null, new { @class = "btn btn-danger form-control" })<br /><br />
-            @Html.ActionLink("#", "#", "#", null, new { @class = "btn btn-danger form-control" })
+            <ul>
+                <li>Profile Info</li>
+                <li>Delivery Places</li>
+            </ul>
             <br />
             <hr />
         </div>
@@ -38,14 +40,14 @@
                 </p>
 
                 <p style="padding: 5px 5px; " class="col-md-3">
-                    @Html.ActionLink("Make A Delivery", "#", "DeliverySystem", null, new { @class = "btn btn-danger" })
+                    @Html.ActionLink("Make A Delivery", "MakeDelivery", "Delivery", null, new { @class = "btn btn-danger" })
                     <br />
                     <br />
                     Your Make A Delivery Here!
                 </p>
 
                 <p style="padding: 5px 5px;" class="col-md-3">
-                    @Html.ActionLink("My Delivered Orders", "#", "DeliverySystem", null, new { @class = "btn btn-danger" })                    <br />
+                    @Html.ActionLink("My Delivered Orders", "DeliveredOrders", "Delivery", null, new { @class = "btn btn-danger" })                    <br />
                     <br />
                     Your Delivered Orders Here!
                 </p>
