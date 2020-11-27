@@ -3933,3 +3933,5 @@ C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBook
 C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.Jobnull.resources
 C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.rentals.resources
 C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\bin\Rotativa.dll
+C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\bin\Rotativa.dll
+C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.rentals.resources
