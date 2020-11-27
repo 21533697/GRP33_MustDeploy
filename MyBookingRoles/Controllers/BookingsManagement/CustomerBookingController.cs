@@ -54,7 +54,16 @@ namespace MyBookingRoles.Controllers.BookingsManagement
         public ActionResult MakeBooking(Booking booking)
         {
             //ViewBag.User = User.Identity.GetUserName().ToString();
-            if (ModelState.IsValid)
+            bool time = false;
+            ViewBag.time = "";
+
+            if (booking.Date < DateTime.Now)
+            {
+                time = true;
+                ViewBag.time = "Please select a date that is still to come.";
+            }
+
+            if (ModelState.IsValid && time != true)
             {
                 booking.LocationVenueFee = booking.calcLocationFee();
                 booking.PackageCost = booking.calcPackageCost();

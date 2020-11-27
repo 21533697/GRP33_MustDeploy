@@ -12,6 +12,11 @@
     
     <div class="form-horizontal">
         <h4>Make A Booking</h4>
+
+        <p style="color: red; text-align: right; background-color: black;">
+            <b><u>@ViewBag.time</u></b>
+        </p>
+
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">

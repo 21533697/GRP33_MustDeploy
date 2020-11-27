@@ -7,6 +7,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Rotativa;
 
 namespace MyBookingRoles.Controllers
 {
@@ -69,18 +70,18 @@ namespace MyBookingRoles.Controllers
 
             if (JobOrdId != 0)
             {
-                //Implement Invoice Download
-                var invoiceFile = "";
 
                 //Update
-                job.InvoicePdf = invoiceFile;
+                job.InvoicePdf = "Downloaded";
                 job.InvoiceDownloaded = true;
 
                 //
                 context.Entry(job).State = EntityState.Modified;
                 context.SaveChangesAsync();
             }
-            return RedirectToAction("MakeDelivery", new { id = job.JobId });
+            return RedirectToAction("PrintInvoice", "Orders", new { idPdf = JobOrdId });
         }
+
+        
     }
 }

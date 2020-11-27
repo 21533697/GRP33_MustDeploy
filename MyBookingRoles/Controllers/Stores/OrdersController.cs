@@ -6,6 +6,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
+using Rotativa;
+using Rotativa.Options;
 
 namespace MyBookingRoles.Controllers.Stores
 {
@@ -43,6 +45,7 @@ namespace MyBookingRoles.Controllers.Stores
         }
 
         // GET: Orders/Details/5
+        [AllowAnonymous]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -57,6 +60,19 @@ namespace MyBookingRoles.Controllers.Stores
             }
 
             return View(ord);
+        }
+
+        //
+        public ActionResult PrintInvoice(int idPdf)
+        {
+            int pagecopies = 1;
+            var report = new ActionAsPdf("Details", new { id = idPdf })
+            {
+                PageMargins = new Margins(2, 2, 0, 2),
+                PageWidth = 210,
+                CustomSwitches = "--disable-smart-shrinking --load-error-handling ignore --copies " + pagecopies + ""
+            };
+            return report;
         }
 
         //

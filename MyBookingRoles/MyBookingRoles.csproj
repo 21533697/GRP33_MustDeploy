@@ -68,6 +68,9 @@
     <Reference Include="PayPal, Version=1.9.1.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
       <HintPath>..\packages\PayPal.1.9.1\lib\net451\PayPal.dll</HintPath>
     </Reference>
+    <Reference Include="Rotativa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rotativa.1.7.3\lib\net461\Rotativa.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -360,12 +363,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Rotativa\help-wkhtmltoimage.txt" />
+    <Content Include="Rotativa\help-wkhtmltopdf.txt" />
+    <Content Include="Rotativa\wkhtmltoimage.exe" />
+    <Content Include="Rotativa\wkhtmltopdf.exe" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Documents\Submission Docs\2020 ADPB301 Study Guide V2.pdf" />
     <Content Include="Documents\Submission Docs\Application form.docx" />
     <Content Include="Documents\Submission Docs\Sprint 01\GRP33 SRS Inc 1.docx" />
     <Content Include="Documents\Submission Docs\Sprint 01\GRP33 SRS Inc 1.pdf" />
+    <Content Include="App_Browsers\qt.browser" />
     <None Include="Properties\PublishProfiles\Grp33AppDb - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\Grp33AppDb - ReadOnly - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\Grp33AppDb - Web Deploy.pubxml" />
