@@ -1,0 +1,87 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Rentals.EqRental>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+
+    <h2 class="jumbotron" style="text-align:center;"><u>My Equipment Rental(s)</u></h2>
+
+    <div>
+        @Html.ActionLink("Rent More Equipment", "EquipCatalogue", "Home", null, new { @class = "btn btn-info" })
+
+    </div>
+<br />
+
+<table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Duration.LengthDuration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Equipment.EquipName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentalPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EqRentalPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DurationPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotStudioPrice)
+        </th>
+        <th style="background-color: gray;text-align:center;">Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr style="text-align:center">
+    <td>
+        @Html.DisplayFor(modelItem => item.Duration.LengthDuration)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Equipment.EquipName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.UserID)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.RentalDate)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.RentalPrice)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.EqRentalPrice)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DurationPrice)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TotStudioPrice)
+    </td>
+    <td style="text-align:center;">
+        @Html.ActionLink("Change Equipment", "Edit", new { id = item.EqRentId }, new { @class = "btn btn-primary" }) |
+        @*@Html.ActionLink("Details", "Details", new { id = item.EqRentId }) |*@
+        @Html.ActionLink("Cancel Rental", "Delete", new { id = item.EqRentId }, new { @class = "btn btn-danger" })
+    </td>
+</tr>
+    }
+
+</table>
+<p>
+    <hr />
+    @Html.ActionLink("Back to Catalogue", "EquipCatalogue", "Home", null, new { @class = "btn btn-primary" }) | 
+    @Html.ActionLink("Back to Dashboard", "Index", "MyUser", null, new { @class = "btn btn-primary" })
+
+</p>

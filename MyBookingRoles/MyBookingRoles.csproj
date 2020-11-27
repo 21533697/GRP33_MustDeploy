@@ -207,6 +207,12 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MyUserController.cs" />
     <Compile Include="Controllers\PayPal\PayPalController.cs" />
+    <Compile Include="Controllers\Rentals\AreasController.cs" />
+    <Compile Include="Controllers\Rentals\CustomerRentalsController.cs" />
+    <Compile Include="Controllers\Rentals\EqRentalsController.cs" />
+    <Compile Include="Controllers\Rentals\EquipmentsController.cs" />
+    <Compile Include="Controllers\Rentals\RentalsController.cs" />
+    <Compile Include="Controllers\Rentals\StudiosController.cs" />
     <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\Stores\BrandsController.cs" />
     <Compile Include="Controllers\Stores\CategoriesController.cs" />
@@ -248,6 +254,10 @@
     <Compile Include="Migrations\202011261429512_Job null.designer.cs">
       <DependentUpon>202011261429512_Job null.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011271026037_rentals.cs" />
+    <Compile Include="Migrations\202011271026037_rentals.designer.cs">
+      <DependentUpon>202011271026037_rentals.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BookingModels\Booking.cs" />
@@ -263,6 +273,14 @@
     <Compile Include="Models\PayPal\PaypalConfiguration.cs" />
     <Compile Include="Models\RateService\Rates.cs" />
     <Compile Include="Models\RateService\Rate_Service.cs" />
+    <Compile Include="Models\Rentals\Area.cs" />
+    <Compile Include="Models\Rentals\Duration.cs" />
+    <Compile Include="Models\Rentals\EqRental.cs" />
+    <Compile Include="Models\Rentals\Equipment.cs" />
+    <Compile Include="Models\Rentals\PhotoModel.cs" />
+    <Compile Include="Models\Rentals\Photos.cs" />
+    <Compile Include="Models\Rentals\Rental.cs" />
+    <Compile Include="Models\Rentals\Studio.cs" />
     <Compile Include="Models\Store\Brand.cs" />
     <Compile Include="Models\Store\Category.cs" />
     <Compile Include="Models\Store\DeliveryJob.cs" />
@@ -486,6 +504,38 @@
     <Content Include="Views\Delivery\MakeDelivery.cshtml" />
     <Content Include="Views\OrderDetailed\GCharts.cshtml" />
     <Content Include="Views\ShoppingCart\Payfast.cshtml" />
+    <Content Include="Views\EqRentals\Create.cshtml" />
+    <Content Include="Views\EqRentals\Delete.cshtml" />
+    <Content Include="Views\EqRentals\Details.cshtml" />
+    <Content Include="Views\EqRentals\Edit.cshtml" />
+    <Content Include="Views\EqRentals\Index.cshtml" />
+    <Content Include="Views\EqRentals\Succesful.cshtml" />
+    <Content Include="Views\Equipments\Create.cshtml" />
+    <Content Include="Views\Equipments\Delete.cshtml" />
+    <Content Include="Views\Equipments\Details.cshtml" />
+    <Content Include="Views\Equipments\Edit.cshtml" />
+    <Content Include="Views\Home\EquipCatalogue.cshtml" />
+    <Content Include="Views\Equipments\Index.cshtml" />
+    <Content Include="Views\Rentals\Create.cshtml" />
+    <Content Include="Views\Rentals\Delete.cshtml" />
+    <Content Include="Views\Rentals\Details.cshtml" />
+    <Content Include="Views\Rentals\Edit.cshtml" />
+    <Content Include="Views\Rentals\Index.cshtml" />
+    <Content Include="Views\Rentals\Succesful.cshtml" />
+    <Content Include="Views\Studios\Create.cshtml" />
+    <Content Include="Views\Studios\Delete.cshtml" />
+    <Content Include="Views\Studios\Details.cshtml" />
+    <Content Include="Views\Studios\Edit.cshtml" />
+    <Content Include="Views\Studios\Index.cshtml" />
+    <Content Include="Views\Home\StudCatalogue.cshtml" />
+    <Content Include="Views\Areas\Create.cshtml" />
+    <Content Include="Views\Areas\Delete.cshtml" />
+    <Content Include="Views\Areas\Details.cshtml" />
+    <Content Include="Views\Areas\Edit.cshtml" />
+    <Content Include="Views\Areas\Index.cshtml" />
+    <Content Include="Views\CustomerRentals\Index.cshtml" />
+    <Content Include="Views\CustomerRentals\StudioRentals.cshtml" />
+    <Content Include="Views\CustomerRentals\EquipRentals.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -525,6 +575,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202011261429512_Job null.resx">
       <DependentUpon>202011261429512_Job null.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011271026037_rentals.resx">
+      <DependentUpon>202011271026037_rentals.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

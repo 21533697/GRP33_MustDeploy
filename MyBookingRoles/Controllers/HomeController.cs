@@ -85,6 +85,18 @@ namespace MyBookingRoles.Controllers
         }
 
         //
+        /// <summary>
+        /// /
+        /// </summary>
+        public ActionResult StudCatalogue()
+        {
+            return View(context.Studios.ToList());
+        }
+
+        public ActionResult EquipCatalogue()
+        {
+            return View(context.Equipment.ToList());
+        }
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);

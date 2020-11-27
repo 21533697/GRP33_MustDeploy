@@ -1,0 +1,57 @@
+﻿@model MyBookingRoles.Models.Rentals.Studio
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+    var base64 = "";
+    var imgsrc = "";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this Studio?</h3>
+<div>
+    <h4>Studio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StudioName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudioName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudioPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudioPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudioPics)
+        </dt>
+
+        <dd>
+            @if (Model.StudioPics != null)
+            {
+                base64 = Convert.ToBase64String(Model.StudioPics);
+                imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+
+                <img src='@imgsrc' style="width:100px;height:100px" class="img-rounded" />
+            }
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

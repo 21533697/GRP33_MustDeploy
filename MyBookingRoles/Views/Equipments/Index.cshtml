@@ -1,0 +1,70 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Rentals.Equipment>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Brand.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EquipName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EquipPics)
+        </th>
+        <th style="background-color: gray;text-align:center;">Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        var base64 = "";
+        var imgsrc = "";
+
+        <tr style="text-align:center">
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EquipName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @if (item.EquipPics != null)
+                {
+                    base64 = Convert.ToBase64String(item.EquipPics);
+                    imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+
+                    <img src='@imgsrc' style="width:100px;height:100px" class="img-responsive" />
+                }
+            </td>
+            <td style="text-align:center;">
+                @Html.ActionLink("Edit", "Edit", new { id = item.EquipId }, new { @class = "btn btn-default" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.EquipId }, new { @class = "btn btn-success" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.EquipId }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })

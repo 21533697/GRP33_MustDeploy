@@ -6,6 +6,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using MyBookingRoles.Models.Rentals;
 
 namespace MyBookingRoles.Models
 {
@@ -57,10 +58,25 @@ namespace MyBookingRoles.Models
 
         public virtual DbSet<EmailNotif> EmailNotifs { get; set; }
         public virtual DbSet<CustomerSupport> CustomerSupports { get; set; }
+
         //Rate_Service
         public DbSet<RateService.Rates> Rates { get; set; }
         public DbSet<RateService.Rate_Service> Rate_Services { get; set; }
         public DbSet<Store.DeliveryJob> deliveryJobs { get; set; }
 
+        //Rentals
+        public virtual DbSet<Area> Areas { get; set; }
+
+        public virtual DbSet<Studio> Studios { get; set; }
+
+        public virtual DbSet<Rental> Rentals { get; set; }
+
+        public virtual DbSet<Photos> Photos { get; set; }
+
+        public virtual DbSet<Duration> Durations { get; set; }
+
+        public virtual DbSet<Equipment> Equipment { get; set; }
+
+        public virtual DbSet<EqRental> EqRentals { get; set; }
     }
 }

@@ -46,6 +46,8 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("|", "#", "#")</li>
+                    <li>@Html.ActionLink("Studios for Hire", "StudCatalogue", "Home")</li>
+                    <li>@Html.ActionLink("Rent Equipment", "EquipCatalogue", "Home")</li>
 
                     @if (!User.IsInRole("SuperAdmin") && !User.IsInRole("Delivery"))
                     {

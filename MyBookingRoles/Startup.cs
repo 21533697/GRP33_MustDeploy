@@ -97,6 +97,7 @@ namespace MyBookingRoles
                     Rates_Name = "Excellent Performance Rating"
                 });
 
+            //Store
             context.Category.AddOrUpdate(c => c.CategoryName,
                 new Models.Store.Category()
                 {
@@ -112,7 +113,7 @@ namespace MyBookingRoles
                     CategoryName = "Storage Device"
                 });
 
-            context.Brands.AddOrUpdate(c=>c.Name,
+            context.Brands.AddOrUpdate(c => c.Name,
                 new Models.Store.Brand()
                 {
                     Name = "Samsung",
@@ -122,14 +123,90 @@ namespace MyBookingRoles
                 {
                     Name = "Nikon",
                     isVisible = true
-                }, 
+                },
                 new Models.Store.Brand()
                 {
                     Name = "Apple",
                     isVisible = true
+                },
+                 new Models.Store.Brand()
+                 {
+                     Name = "SONY",
+                     isVisible = true
+                 },
+                  new Models.Store.Brand()
+                  {
+                      Name = "Canon",
+                      isVisible = true
+                  },
+                   new Models.Store.Brand()
+                   {
+                       Name = "HP",
+                       isVisible = true
+                   },
+                    new Models.Store.Brand()
+                    {
+                        Name = "DELL",
+                        isVisible = true
+                    });
+
+            //Rentals
+            context.Areas.AddOrUpdate(a => a.SquareFeet,
+                new Models.Rentals.Area()
+                {
+                    SquareFeet = "3 x 5m",
+                    AreaPrice = 150
+                },
+                new Models.Rentals.Area()
+                {
+                    SquareFeet = " 5 x 7m",
+                    AreaPrice = 200
+                },
+                new Models.Rentals.Area()
+                {
+                    SquareFeet = "10 x 20m",
+                    AreaPrice = 350
                 });
 
-            //these are services
+            context.Durations.AddOrUpdate(d => d.LengthDuration,
+                new Models.Rentals.Duration()
+                {
+                    LengthDuration = "Less than a week",
+                    DurationPrice = 150
+                },
+                new Models.Rentals.Duration()
+                {
+                    LengthDuration = "1 week",
+                    DurationPrice = 200
+                },
+                new Models.Rentals.Duration()
+                {
+                    LengthDuration = "2 weeks",
+                    DurationPrice = 250
+                },
+                new Models.Rentals.Duration()
+                {
+                    LengthDuration = "3 weeks",
+                    DurationPrice = 300
+                },
+                new Models.Rentals.Duration()
+                {
+                    LengthDuration = "1 Month",
+                    DurationPrice = 350
+                },
+                new Models.Rentals.Duration()
+                {
+                    LengthDuration = "2 Months",
+                    DurationPrice = 700
+                },
+                new Models.Rentals.Duration()
+                {
+                    LengthDuration = "3 Months",
+                    DurationPrice = 1000
+                });
+
+            //these are services,
+            //Locations
             //change to packages,
 
             context.Packages.AddOrUpdate(p => p.PackageType,
@@ -197,6 +274,8 @@ namespace MyBookingRoles
                     ServiceType = "Full Wedding",
                     ServicePrice = 1000
                 });
+
+
             //Save Changes
             context.SaveChanges();
         }

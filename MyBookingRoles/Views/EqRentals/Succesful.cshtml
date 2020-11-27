@@ -1,0 +1,28 @@
+﻿@model MyBookingRoles.Models.Rentals.EqRental
+
+@{
+    ViewBag.Title = "Succesful";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+
+<h2>Rental Succesfull</h2>
+
+<div class="panel panel-success col-xs-5 col-xs-offset-2" style="text-align:center">
+    <div class=" panel-heading">Equipments Rental Saved</div>
+    <div class=" panel-body">
+
+        <h1> <span class="glyphicon glyphicon-ok-sign" style="height:100px; width:100px;color:lawngreen; align-items:center"></span></h1>
+        <h2><b>Rental successfully save</b></h2>
+
+        <p> Thank you for renting our equipment.</p>
+        <p> We will contact your in less than an 3 days about your equipment. </p>
+        <p><b>The total amount for your rental is</b> <b style="text-underline-position:below; color:rgba(25, 64, 72, 0.90)"> R @Html.DisplayFor(p => p.TotStudioPrice)</b></p>
+
+
+        <div>
+            @Html.ActionLink("Back Home", "Index", "Home", null, new { @class = "btn btn-primary" }) | 
+            @Html.ActionLink("Go To Your Rentals", "Index", "EqRentals", null, new { @class = "btn btn-warning" })
+        </div>
+    </div>
+</div>

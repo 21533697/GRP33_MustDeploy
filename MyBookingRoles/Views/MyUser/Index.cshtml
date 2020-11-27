@@ -25,8 +25,13 @@
             <h2 style="background-color: gray; text-align: center; border: 1px solid black;">Menu</h2>
             <hr />
             @Html.ActionLink("All My Orders", "customerOrders", "MyUser", null, new { @class = "btn btn-default form-control" }) <br /><br />
-            @Html.ActionLink("All My Bookings", "customerBookings", "customerBooking", null, new { @class = "btn btn-default form-control" }) <br /><br />
-            @Html.ActionLink("All My Issues", "Index", "CustSupport", null, new { @class = "btn btn-default form-control" }) <br /><br />
+            @Html.ActionLink("All My Bookings", "customerBookings", "customerBooking", null, new { @class = "btn btn-default form-control" }) <hr />
+            
+            @Html.ActionLink("Rent Studio / Venue", "StudCatalogue", "Home", null, new { @class = "btn btn-default form-control" }) <br /><br />
+            @Html.ActionLink("Hire Equipment", "EquipCatalogue", "Home", null, new { @class = "btn btn-default form-control" }) <hr />
+
+            @Html.ActionLink("My Studio Rentals", "Index", "Rentals", null, new { @class = "btn btn-default form-control" }) <br /><br />
+            @Html.ActionLink("My Equipment Rentals", "Index", "EqRentals", null, new { @class = "btn btn-default form-control" }) <hr />
         </div>
 
         <div style="background-color: white; padding: 15px; text-align:center; border-right: 1px solid black;" class="col-md-9">
@@ -48,9 +53,9 @@
             </div>
             <hr />
             <p>
-                <h2>
+                @*<h2>
                     Delete account Doesnt Work.
-                </h2>
+                </h2>*@
             </p>
         </div>
     </div>

@@ -1,0 +1,95 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Rentals.Rental>
+
+@{
+    ViewBag.Title = "StudioRentals";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Studio Rentals</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Area.SquareFeet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Studio.StudioName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Capacity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Duration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentalTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentalPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CapacityPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudioPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotStudioPrice)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Area.SquareFeet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Studio.StudioName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capacity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentalDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentalTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentalPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CapacityPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudioPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotStudioPrice)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details","Rentals", new { id = item.RentId }, new { @class = "btn btn-default" })
+                @*@Html.ActionLink("Delete", "Delete", new { id = item.RentId })*@
+            </td>
+        </tr>
+    }
+
+</table>
+
+<hr />
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" }) |
+@Html.ActionLink("Return To Rentals Index", "Index", "CustomerRentals", null, new { @class = "btn btn-primary" })

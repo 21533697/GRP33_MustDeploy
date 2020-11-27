@@ -1,0 +1,51 @@
+﻿@model MyBookingRoles.Models.Rentals.Studio
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+    var base64 = "";
+    var imgsrc = "";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Studio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StudioName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudioName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudioPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudioPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudioPics)
+        </dt>
+
+        <dd>
+            @if (Model.StudioPics != null)
+            {
+                base64 = Convert.ToBase64String(Model.StudioPics);
+                imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+
+                <img src='@imgsrc' style="width:100px;height:100px" class="img-rounded" />
+            }
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.StudioId }) |*@
+    @Html.ActionLink("Back to Studios", "Index", new { @class = "btn btn-info" })
+</p>
