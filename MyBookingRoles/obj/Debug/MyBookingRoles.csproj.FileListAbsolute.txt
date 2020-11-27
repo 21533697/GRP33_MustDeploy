@@ -3929,3 +3929,5 @@ C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyB
 C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.csproj.GenerateResource.cache
 C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.Job.resources
 C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.Jobnull.resources
+C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.Job.resources
+C:\Users\koolj\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Debug\MyBookingRoles.Migrations.Jobnull.resources
