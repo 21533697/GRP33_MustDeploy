@@ -485,6 +485,7 @@
     <Content Include="Views\OrderDetailed\Index.cshtml" />
     <Content Include="Views\Delivery\MakeDelivery.cshtml" />
     <Content Include="Views\OrderDetailed\GCharts.cshtml" />
+    <Content Include="Views\ShoppingCart\Payfast.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -169,14 +169,20 @@ namespace MyBookingRoles.Controllers.Store
 
             Session.Remove("cart");
             Session.Remove("count");
-            return RedirectToAction("OrderSuccess",new { ord = order.OrderName});
+            return RedirectToAction("Payfast", new { ordname = order.OrderName, paymnetamount  = order.PaymentAmount});
             //Create a Add Statement for the modes
         }
 
-        [Authorize(Roles = "Customer")]
-        public ActionResult OrderSuccess(string ord)
+        public ActionResult Payfast(string ordname, double paymnetamount)
         {
-            ViewBag.OrderName = ord;
+            ViewBag.ordname = ordname;
+            ViewBag.paymnetamount = paymnetamount;
+            return View();
+        }
+
+        [Authorize(Roles = "Customer")]
+        public ActionResult OrderSuccess()
+        {
             return View();
         }
 

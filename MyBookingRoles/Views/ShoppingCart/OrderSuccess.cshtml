@@ -4,23 +4,23 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h2><u>Thank you For Ordering at <b>Studio Foto45</b></u></h2>
-<p>
-    <b>Your Order Will be delivered in 6-7 Working day</b>. &nbsp;
+<h3>
+    <b>Your Order Will be delivered in 6-7 Working day</b>. &nbsp; &nbsp;
     Please Check Your Email For Updates.
-</p>
+</h3>
 <hr />
 <div class="form-inline">
-    <h3>
-        Your Order <b><u>@ViewBag.OrderName</u></b> is being Processed. <br /><br /> 
-        @Html.ActionLink("Click Here!", "customerOrders", "MyUser",null,new { @class = "btn btn-success"}) for your Orders.
-    </h3>
+    <p>
+        Your Order is being Processed. <br /><br />
+        @Html.ActionLink("Click Here!", "customerOrders", "MyUser", null, new { @class = "btn btn-success" }) for your Orders.
+    </p>
 
     <br />
-    <hr />
     <p>
         Go Back to @Html.ActionLink("Store Catalogue!", "ProdCatalogue", "Store")
         <br />
         <br />
-        @Html.ActionLink("Go Back Your Dashboard!", "Index", "MyUser", null, new { @class = "btn btn-primary" })
     </p>
 </div>
+<hr />
+@Html.ActionLink("Go Back Your Dashboard!", "Index", "MyUser", null, new { @class = "btn btn-primary" })
