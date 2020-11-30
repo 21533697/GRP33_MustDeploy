@@ -1,0 +1,76 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Rentals.EqRental>
+
+@{
+    ViewBag.Title = "EquipRentals";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Equipment Rentals</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Duration.LengthDuration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Equipment.EquipName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentalPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EqRentalPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DurationPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotStudioPrice)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration.LengthDuration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Equipment.EquipName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentalDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentalPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EqRentalPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DurationPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotStudioPrice)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details","EqRentals", new { id = item.EqRentId }, new { @class = "btn btn-default" }) |
+                @*@Html.ActionLink("Delete", "Delete", new { id = item.EqRentId })*@
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" }) |
+@Html.ActionLink("Return To Rentals Index", "Index", "CustomerRentals", null, new { @class = "btn btn-primary" })

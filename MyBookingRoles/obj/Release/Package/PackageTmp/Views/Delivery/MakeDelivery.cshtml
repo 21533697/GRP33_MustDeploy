@@ -1,0 +1,70 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Store.DeliveryJob>
+
+@{
+    ViewBag.Title = "MakeDelivery";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2 style="text-align:center;">Make a Delivery</h2>
+
+<table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">
+    <tr style="background-color: gray;">
+        <th>
+            @Html.DisplayNameFor(model => model.OrderId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeliveryPersonId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InvoicePdf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InvoiceDownloaded)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AcceptedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeliveryDate)
+        </th>
+        <th>
+            Invoice Document
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryPersonId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InvoicePdf)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InvoiceDownloaded)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AcceptedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryDate)
+            </td>
+            <td>
+                @Html.ActionLink("Invoice", "Invoice", new { id = item.JobId },new { @class="btn btn-primary"})
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+@Html.ActionLink("Return To Dashboard", "DeliveryDashboard", "Delivery", null, new { @class = "btn btn-primary" })

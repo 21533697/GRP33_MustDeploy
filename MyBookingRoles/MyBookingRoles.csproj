@@ -363,6 +363,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\Site_Imaes\1BG.jpg" />
     <Content Include="Rotativa\help-wkhtmltoimage.txt" />
     <Content Include="Rotativa\help-wkhtmltopdf.txt" />
     <Content Include="Rotativa\wkhtmltoimage.exe" />
@@ -374,9 +375,9 @@
     <Content Include="Documents\Submission Docs\Sprint 01\GRP33 SRS Inc 1.docx" />
     <Content Include="Documents\Submission Docs\Sprint 01\GRP33 SRS Inc 1.pdf" />
     <Content Include="App_Browsers\qt.browser" />
-    <None Include="Properties\PublishProfiles\Grp33AppDb - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\Grp33AppDb - ReadOnly - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\Grp33AppDb - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\Grp33AppFinal - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Grp33AppFinal - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\Grp33AppFinal - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -560,7 +561,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Documents\Submission Docs\Sprint 02\" />
-    <Folder Include="images\Site_Imaes\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202011121443226_EmailNot.resx">

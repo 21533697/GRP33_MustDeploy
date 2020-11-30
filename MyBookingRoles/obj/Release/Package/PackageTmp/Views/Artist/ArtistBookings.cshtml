@@ -9,9 +9,9 @@
     <div class="row" style="background-color: black; padding: 10px;">
         <div class="col-md-2">Bookings Sort</div>
         <div style="text-align:center;">
-            @Html.ActionLink("Processing Bookings", "ArtistBookings", "Artist", new { searchWord = "Processing" }, new { @class = "btn  btn-primary" }) |
-            @Html.ActionLink("Approved Bookings", "ArtistBookings", "Artist", new { searchWord = "Approved" }, new { @class = "btn  btn-success" }) |
-            @Html.ActionLink("Completed Bookings", "ArtistBookings", "Artist", new { searchWord = "Delivered" }, new { @class = "btn  btn-danger" }) |
+            @Html.ActionLink("Cancelled Bookings", "ArtistBookings", "Artist", new { searchWord = "Cancelled" }, new { @class = "btn  btn-danger" }) <span class="btn btn-danger">@ViewBag.AllCArtBookings</span> |
+            @Html.ActionLink("Approved Bookings", "ArtistBookings", "Artist", new { searchWord = "Approved" }, new { @class = "btn  btn-primary" }) <span class="btn btn-primary">@ViewBag.AllAArtBookings</span> |
+            @Html.ActionLink("Completed Bookings", "ArtistBookings", "Artist", new { searchWord = "Delivered" }, new { @class = "btn  btn-success" }) <span class="btn btn-success">@ViewBag.AllCoArtBookings</span> |
             @Html.ActionLink("Refresh", "ArtistBookings", "Artist", null, new { @class = "btn  btn-primary" })
         </div>
     </div>
@@ -24,7 +24,7 @@
         @*<u class="pull-right">@Html.ActionLink("BIN", "#",null, new { @class="glyphicon-bishop"})</u>*@
     </b>
 </h3>
-<table class="table table-responsive table-hover table-condensed" ">
+<table class="table table-responsive table-hover table-condensed">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Service.ServiceType)
@@ -79,4 +79,5 @@
     }
 
 </table>
-@Html.ActionLink("Back To Dashboard", "Index", "MyUser", null, new { @class = "btn btn-primary" })
+<hr />
+@Html.ActionLink("Back To Dashboard", "ArtistDashboard", "Artist", null, new { @class = "btn btn-primary" })

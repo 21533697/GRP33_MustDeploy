@@ -1,0 +1,73 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Store.OrderDetails>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="jumbotron" style="text-align:center;">
+    <h2>Sales Dashboard</h2>
+    <u>
+        All Sales Charts And Odered Produts
+    </u>
+</div>
+<div class="row">
+    <h3 style="text-align:center;">
+        <u>Sales Charts</u>
+    </h3>
+
+</div>
+<hr />
+<table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">
+    <caption><u>All Products Ordered</u></caption>
+    <tr style="background-color: gray;">
+        <th>
+            @Html.DisplayNameFor(model => model.Orders.OrderName)
+        </th>
+        <th hidden>
+            @Html.DisplayNameFor(model => model.ProdId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProdName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOrdered)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Orders.OrderName)
+            </td>
+            <td hidden>
+                @Html.DisplayFor(modelItem => item.ProdId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProdName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOrdered)
+            </td>
+            <td></td>
+        </tr>
+    }
+
+</table>
+
+<hr />
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })

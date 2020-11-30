@@ -1,0 +1,60 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Store.Order>
+@{
+    ViewBag.Title = "Approved Orders";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+@using (Html.BeginForm("Index", "Orders", FormMethod.Get))
+{
+    <div class="row" style="background-color: black; padding: 5px">
+        <div class="col-md-2">
+            <h4>Approved Orders</h4>
+        </div>
+        <div class="col-md-2 ">
+            @Html.TextBox("searchWord", null, new { @class = "form-control" })
+        </div>
+        <div class="col-md-2">
+            <input type="submit" value="Search Order Address" class="btn btn-success" />
+        </div>
+    </div>
+}
+<br />
+<table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">
+    <tr style="background-color: gray;">
+        <th>
+            @Html.DisplayNameFor(model => model.OrderName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+
+        <th style="text-align:center;">Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr style="text-align:center;">
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderDate)
+            </td>
+
+            <td>
+                <b><u>@Html.DisplayFor(modelItem => item.Status)</u></b>
+            </td>
+
+            <td>
+                @Html.ActionLink("Order Details", "Details","Orders", new { id = item.OrderId }, new { @class = "btn btn-primary" })
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+@Html.ActionLink("Return To Dashboard", "DeliveryDashboard", "Delivery", null, new { @class = "btn btn-primary" })

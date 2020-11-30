@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2 style="text-align:center;"><u>Customer Rentals Index</u></h2>
+
+<div>
+    <h3 style="text-align:center;">
+        @Html.ActionLink("Customer Rentals", "StudioRentals", "CustomerRentals", null, new { @class = "btn btn-primary" }) | 
+        @Html.ActionLink("Customer Rentals", "EquipRentals", "CustomerRentals", null, new { @class = "btn btn-primary" })
+    </h3>
+    <hr />
+    <p>
+        All Charts About Rentals Here
+    </p>
+    
+</div>
+
+<hr />
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })

@@ -26,7 +26,7 @@
                     @Html.ActionLink("SuperAdmin Foto45", "Index", "SuperAdmin", new { area = "" }, new { @class = "navbar-brand" })
                 }else if (User.IsInRole("Delivery"))
                 {
-                    @Html.ActionLink("Delivery Foto45", "DeliveryDashboard", "DeliverySystem", new { area = "" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("Delivery Foto45", "DeliveryDashboard", "Delivery", new { area = "" }, new { @class = "navbar-brand" })
                 }else if (User.IsInRole("Artist"))
                 {
                     @Html.ActionLink("Artist Foto45", "ArtistDashboard", "Artist", new { area = "" }, new { @class = "navbar-brand" })
@@ -66,12 +66,13 @@
                             <li></li>
                         }
                     }
+                    <li style="background-color:silver;">@Html.ActionLink(""+ @DateTime.Now.ToString("dddd, dd MMMM yyyy") + "","#","#")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
-    <div class="container body-content" style="background-color:deepskyblue;padding: 25px; border-radius: 5px; ">
+    <div class="container body-content" style="background-color: deepskyblue;padding: 25px;border-radius: 5px;">
         @RenderBody()
 
     </div>

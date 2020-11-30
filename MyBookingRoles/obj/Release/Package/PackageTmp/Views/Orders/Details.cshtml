@@ -3,9 +3,11 @@
 @{
     ViewBag.Title = Model.OrderName + "-Details";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
+    var ddi = Model.OrderId;
 }
 
-<h2><u>Order ID @Model.OrderId Details</u></h2>
+<h2><u>Order ID @ddi Details</u></h2>
+
 
 <div class="row" style="background-color: silver;">
     <h4><b>Order Name : </b><u>@Html.DisplayFor(model => model.OrderName)</u></h4>
@@ -85,20 +87,26 @@
 </div>
 
 <div style="text-align:center;">
-    
-    <hr />
-    @if (User.IsInRole("SuperAdmin"))
-    {
-    <p>
 
-        @Html.ActionLink("Delete Order!", "DeleteOrder", "Orders", new { id = Model.OrderId }, new { @class = "btn btn-danger", @onclick = "return confirm('Are you sure you want to delete this order?');" })
-        |
-        @Html.ActionLink("Approve Order!", "ApproveOrder", "Orders", new { id = Model.OrderId }, new { @class = "btn btn-success" })
-        <hr />
-        <div style="text-align:left;">
-            @Html.ActionLink("Back to Order List", "Index", "Orders", null, new { @class = "btn btn-primary" })
-        </div>
-    </p>
+    <hr />
+    @if (User.IsInRole("Delivery"))
+    {
+        <p>
+            @Html.ActionLink("Accept Order", "AcceptOrder", "Delivery", new { id = ddi }, new { @class = "btn btn-danger" })
+        </p>
+    }
+    else if (User.IsInRole("SuperAdmin"))
+    {
+        <p>
+
+            @Html.ActionLink("Delete Order!", "DeleteOrder", "Orders", new { id = Model.OrderId }, new { @class = "btn btn-danger", @onclick = "return confirm('Are you sure you want to delete this order?');" })
+            |
+            @Html.ActionLink("Approve Order!", "ApproveOrder", "Orders", new { id = Model.OrderId }, new { @class = "btn btn-success" })
+            <hr />
+            <div style="text-align:left;">
+                @Html.ActionLink("Back to Order List", "Index", "Orders", null, new { @class = "btn btn-primary" })
+            </div>
+        </p>
     }
     else
     {
@@ -112,13 +120,12 @@
     }
 </div>
 
-<hr />
-<p>
-    <h2>To Do List</h2>
-    <ul>
-        <li>Delete Order & Order Details</li>
-        <li>Approve order & Changing Order Status</li>
-        <li>Have notification for each process.</li>
-        <li>Have notification for status changes</li>
-    </ul>
-</p>
+@*<hr />
+    <p>
+        <h2>To Do List</h2>
+        <ul>
+
+            <li>Have notification for each process.</li>
+            <li>Have notification for status changes</li>
+        </ul>
+    </p>*@

@@ -19,38 +19,44 @@
 <div class="row">
     <div class="container">
         <h1 style="text-align: center;"><u><b>Your General Options</b></u></h1>
-        <br />
-        <br />
-        <div class="col-md-2">
-            <h3>Menu</h3>
+        <div class="col-md-3 col-md-9" style="border-right: 1px solid black;">
+            <h2 style="border: 1px solid black; text-align: center; background-color: white;"><u>Artist Menu</u></h2>
+            <br />
+            <ul>
+                <li>Profile Info</li>
+                <li>Delivery Places</li>
+            </ul>
+            <br />
+            <hr />
         </div>
 
         <div style="background-color: white; padding: 15px; text-align:center;" class="col-md-9">
             <div class="container">
                 <p style="padding: 5px 5px; " class="col-md-3">
-                    @Html.ActionLink("Approved Orders", "#", "DeliverySystem", null, new { @class = "btn btn-danger" })
+                    @Html.ActionLink("Approved Orders", "ApprovedOrders", "Delivery", null, new { @class = "btn btn-primary" })
                     <br />
                     <br />
                     All Approved Orders
                 </p>
 
                 <p style="padding: 5px 5px; " class="col-md-3">
-                    @Html.ActionLink("Make A Delivery", "#", "DeliverySystem", null, new { @class = "btn btn-danger" })
+                    @Html.ActionLink("Make A Delivery", "MakeDelivery", "Delivery", null, new { @class = "btn btn-primary" })
                     <br />
                     <br />
                     Your Make A Delivery Here!
                 </p>
+
                 <p style="padding: 5px 5px;" class="col-md-3">
-                    @Html.ActionLink("My Delivered Orders", "#", "DeliverySystem", null, new { @class = "btn btn-danger" })                    <br />
+                    @Html.ActionLink("My Delivered Orders", "DeliveredOrders", "Delivery", null, new { @class = "btn btn-danger" })                    <br />
                     <br />
                     Your Delivered Orders Here!
                 </p>
             </div>
             <hr />
             <p>
-                <h2>
+                @*<h2>
                     Delete account Doesnt Work.
-                </h2>
+                </h2>*@
             </p>
         </div>
     </div>

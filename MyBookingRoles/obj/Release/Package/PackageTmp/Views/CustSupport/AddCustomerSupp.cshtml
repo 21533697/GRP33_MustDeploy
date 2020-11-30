@@ -1,0 +1,59 @@
+﻿@model MyBookingRoles.Models.CustomerSupport
+
+@{
+    ViewBag.Title = "Add Customer Support";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h2>Add Customer Support</h2>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Cs_Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Cs_Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Cs_Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Cs_Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Cs_Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Cs_Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Cs_Issue, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Cs_Issue, new { htmlAttributes = new { @class = "form-control"} ,cols="50",
+                    rows="10"})
+                @Html.ValidationMessageFor(model => model.Cs_Issue, "", new { @class = "text-danger"})
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Add Support" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+}
+
+<hr />
+<div>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <span>@Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" }) |</span>
+        
+    }
+
+    
+    @Html.ActionLink("Back to Home Page", "Index", "Home", null, new { @class = "btn btn-primary" })
+</div>

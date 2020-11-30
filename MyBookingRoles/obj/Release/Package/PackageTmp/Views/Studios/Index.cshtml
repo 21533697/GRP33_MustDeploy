@@ -1,0 +1,58 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Rentals.Studio>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>All Studios</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create",null, new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StudioName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudioPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudioPics)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        var base64 = "";
+        var imgsrc = "";
+
+        <tr style="text-align:center">
+            <td>
+                @Html.DisplayFor(modelItem => item.StudioName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudioPrice)
+            </td>
+            <td>
+                @if (item.StudioPics != null)
+                {
+                    base64 = Convert.ToBase64String(item.StudioPics);
+                    imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+
+                    <img src='@imgsrc' style="width:50px;height:50px" class="img-responsive" />
+                }
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.StudioId }, new { @class = "btn btn-default" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.StudioId }, new { @class = "btn btn-success" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.StudioId }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+<hr />
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })

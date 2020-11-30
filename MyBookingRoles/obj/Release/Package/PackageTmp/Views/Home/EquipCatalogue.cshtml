@@ -1,0 +1,78 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Rentals.Equipment>
+
+@{
+    ViewBag.Title = "EquipCatalogue";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center;">Equipment for Hire</h2>
+<br />
+<p>
+    <b> We have a long list of equipment for : </b>
+    <ul>
+        <li>Photoshoots</li>
+        <li>Videoshoots</li>
+        <li>Filmography</li>
+    </ul>
+</p>
+<br />
+<table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Brand.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EquipName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EquipPics)
+        </th>
+        <th style="background-color: gray;text-align:center;">Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        var base64 = "";
+        var imgsrc = "";
+
+        <tr style="text-align:center">
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EquipName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @if (item.EquipPics != null)
+                {
+                    base64 = Convert.ToBase64String(item.EquipPics);
+                    imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+
+                    <img src='@imgsrc' style="width:100px;height:100px" class="img-responsive" />
+                }
+            </td>
+            <td style="text-align:center;">
+                @*@Html.ActionLink("Edit", "Edit", new { id = item.EquipId }) |*@
+                @Html.ActionLink("Rent", "Create", "EqRentals", new { id = item.EquipId }, new { @class = "btn btn-info" }) |
+                @Html.ActionLink("Review Equipment", "Details", "EqRentals", new { id = item.EquipId }, new { @class = "btn btn-primary" })
+            </td>
+        </tr>
+    }
+
+</table>
+<div>
+    <hr />
+    <b> @Html.ActionLink("Back to Home", "Index", "Home", null, new { @class = "btn btn-primary" }) </b>
+</div>

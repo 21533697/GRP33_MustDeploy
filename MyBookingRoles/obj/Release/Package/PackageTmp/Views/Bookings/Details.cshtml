@@ -12,6 +12,14 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.BookingID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookingID)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.Location.LocationType)
         </dt>
 
@@ -141,7 +149,8 @@
 
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.BookingID }) |
-    @Html.ActionLink("Back to List", "Index")
+<hr />
+<p style="text-align: center;">
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Approve Booking", "ApproveBooking", "BookingManagement", new { id = Model.BookingID }, new { @class = "btn btn-success" })
 </p>

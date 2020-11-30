@@ -3,3 +3,11 @@
 Add-Migration ""
 
 Update-Database
+
+Meetings 15
+s = 10
+b = 13
+L = 12
+A = 14
+T = 13
+J = 14

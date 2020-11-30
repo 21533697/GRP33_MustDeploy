@@ -11,7 +11,7 @@
     @*@Html.ActionLink("Create New", "Create")*@
     Number Of All Bookings : @Model.Count() Bookings.
 </p>
-<table class="table table-responsive table-hover table-condensed"">
+<table class="table table-responsive table-hover table-condensed">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Service.ServiceType)
@@ -57,11 +57,13 @@
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.BookingID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.BookingID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.BookingID })
+                @*@Html.ActionLink("Edit", "Edit", new { id = item.BookingID }) |*@
+                @Html.ActionLink("Details", "Details", new { id = item.BookingID }, new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.BookingID }, new { @class = "btn btn-danger" })
             </td>
         </tr>
     }
 
 </table>
+<hr />
+@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })

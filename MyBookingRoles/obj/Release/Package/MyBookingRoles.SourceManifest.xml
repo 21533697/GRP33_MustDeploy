@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\obj\Release\Package\PackageTmp" />
-  <setAcl path="C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
-  <setAcl path="C:\Users\21533697\Downloads\Must deploy\Main_GRP33_Project-master\MyBookingRoles\obj\Release\Package\PackageTmp\App_Data" setAclResourceType="Directory" setAclAccess="Write" />
+  <IisApp path="C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\21533697\Documents\GitHub\GRP33_MustDeploy\MyBookingRoles\obj\Release\Package\PackageTmp\App_Data" setAclResourceType="Directory" setAclAccess="Write" />
 </sitemanifest>

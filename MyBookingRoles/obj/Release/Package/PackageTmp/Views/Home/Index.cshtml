@@ -8,15 +8,16 @@
     <h4 class="lead" style="text-align: center;">
         <u><b>One</b> of the best Online-Store Starter Website.</u>
     </h4>
-    @if (User.IsInRole("Customer"))
-    {
-        <h3 style="text-align: center; background-color: gray; padding: 5px 5px 5px  5px;">
+    
+    <h3 style="text-align: center; background-color: gray; padding: 5px 5px 5px  5px;">
+        @if (User.IsInRole("Customer"))
+        {
+            @Html.ActionLink("Make a booking", "MakeBooking", "CustomerBooking", null, new { @class = "btn btn-success" });
+            <text>&nbsp; &nbsp;</text>
+        }
 
-            @Html.ActionLink("Make a booking", "MakeBooking", "CustomerBooking", null, new { @class = "btn btn-success" })
-            &nbsp; &nbsp;
-            @Html.ActionLink("Up-Coming Events", "#", "#", null, new { @class = "btn btn-danger" })
-        </h3>
-    }
+        @Html.ActionLink("Up-Coming Events", "ComingEvents", "Home", null, new { @class = "btn btn-warning" })
+    </h3>
 
 </div>
 
@@ -82,12 +83,7 @@
                             </div>
                         }
                     }
-                    @*else
-                    {
-                        <p>
-                            There Are No Discounted Products Available.
-                        </p>
-                    }*@
+
                 </div>
             </div>
             <hr />
@@ -120,7 +116,7 @@
                                     </p>
                                     <p>
                                         Available : <b style="color:blue;">@item.InStoreQuantity Item(s)</b><br />
-                                        <b style="color: red;">Discount : R @item.Price</b>
+                                        <b style="color: red;">Discount : R @item.Discount</b>
                                     </p>
                                     <div>
                                         @Html.ActionLink("Order Now", "OrderNow", "ShoppingCart", new { id = item.ProductID }, new { @class = "btn btn-success" }) <br /><br />
@@ -130,12 +126,7 @@
                             </div>
                         }
                     }
-                    @*else
-                    {
-                        <p>
-                            There Are No Products Available.
-                        </p>
-                    }*@
+
                 </div>
             </div>
             <hr />
@@ -168,7 +159,7 @@
                                     </p>
                                     <p>
                                         Available : <b style="color:blue;">@item.InStoreQuantity Item(s)</b><br />
-                                        <b style="color: red;"><u>Discount : R @item.Price</u></b>
+                                        <b style="color: red;"><u>Discount : R @item.Discount</u></b>
                                     </p>
                                     <div>
                                         @Html.ActionLink("Order Now", "OrderNow", "ShoppingCart", new { id = item.ProductID }, new { @class = "btn btn-success" }) <br /><br />
@@ -178,22 +169,10 @@
                             </div>
                         }
                     }
-                    @*else
-                    {
-                        <p class="panel-primary" style="padding: 5px;">
-                            There Are No Featured Products.
-                        </p>
-                    }*@
+
                 </div>
             </div>
             <hr />
         </div>
-        @*<p>
-                <ul>
-                    <li>Using Logged In User Information</li>
-                    <li>Payment Methods And Address</li>
-                    <li>Delivery Methods And Delivery Address</li>
-                </ul>
-            </p>*@
     </div>
 </div>

@@ -11,26 +11,30 @@
 <center>
     <div class="row">
         <h2><u>Artist Management.</u></h2>
-        <p class="col-md-6">
-            @Html.ActionLink("Manage All Artist Users", "#", "BookingManagement", null, new { @class = "btn btn-danger" })
-            <br /><br />
-        </p>
-        <p class="col-md-6">
-            @Html.ActionLink("Register New Artist", "RegisterArtist", "BookingManagement", null, new { @class = "btn btn-primary" })
-            <br /><br />
-        </p>
+
+        <div style="border-top: 1px solid black; padding: 5px 5px 5px 5px">
+            
+            <p class="col-md-6">
+                @Html.ActionLink("Manage All Artist Users", "AllArtists", "BookingManagement", null, new { @class = "btn btn-primary" })
+                <br /><br />
+            </p>
+            <p class="col-md-6">
+                @Html.ActionLink("Register New Artist", "RegisterArtist", "BookingManagement", null, new { @class = "btn btn-primary" })
+                <br /><br />
+            </p>
+        </div>
     </div>
-    <hr />
-    <div class="row">
-        <h2><u>Artist Users Information.</u></h2>
-        <p class="col-md-12">
-            <ul>
-                <li>All Artist Personal</li>
-                <li>Bookings And Artist bookings</li>
-                <li></li>
-            </ul>
-        </p>
+    <div class="row" style="border-top: 1px solid black;">
+        <h2><u><b>Artist Jobs</b></u></h2>
+        <div class="col-md-12">
+            <h3><u>Jobs In-Progress</u></h3>
+            <p style="border-top: 1px solid black;">
+
+            </p>
+        </div>
     </div>
 </center>
-
-@Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })
+<hr />
+<p>
+    @Html.ActionLink("Return To SuperAdmin", "Index", "SuperAdmin", null, new { @class = "btn btn-primary" })
+</p>

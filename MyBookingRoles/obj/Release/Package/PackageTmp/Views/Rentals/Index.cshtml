@@ -1,0 +1,104 @@
+﻿@model IEnumerable<MyBookingRoles.Models.Rentals.Rental>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2 class="jumbotron" style="text-align:center;"><u>My Studio Rental(s)</u></h2>
+
+<div>
+    @Html.ActionLink("Hire Another Studio", "StudCatalogue", "Home", null, new { @class = "btn btn-info" })
+
+</div>
+<br />
+
+<table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Area.SquareFeet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Studio.StudioName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Capacity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Duration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentalTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentalPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CapacityPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StudioPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotStudioPrice)
+        </th>
+        <th style="background-color: gray;text-align:center;">Actions</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr style="text-align:center">
+            <td>
+                @Html.DisplayFor(modelItem => item.Area.SquareFeet)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Studio.StudioName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capacity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentalDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentalTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentalPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CapacityPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudioPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotStudioPrice)
+            </td>
+            <td style="text-align:center;">
+                @Html.ActionLink("Change Studio", "Edit", new { id = item.RentId }, new { @class = "btn btn-primary" }) |
+                @*@Html.ActionLink("Details", "Details", new { id = item.RentId }) |*@
+                @Html.ActionLink("Cancel Rental", "Delete", new { id = item.RentId }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+<p>
+    <hr />
+    @Html.ActionLink("Back to Catalogue", "StudCatalogue", "Home", null, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Back to Dashboard", "Index", "MyUser", null, new { @class = "btn btn-primary" })
+</p>

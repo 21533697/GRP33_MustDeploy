@@ -5,11 +5,13 @@
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
-<h2>All Product List</h2>
+<h2><u>All Product List, Total : @Model.Count()</u></h2>
 
 <p>
     @Html.ActionLink("Add New Product", "Create", null, new { @class = "btn btn-default" })
+    <br />    
 </p>
+
 <table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">
     <tr>
         <th>
@@ -40,6 +42,9 @@
             @Html.DisplayNameFor(model => model.Discount)
         </th>
         <th style="background-color: gray;text-align:center;">Actions</th>
+    </tr>
+    <tr>
+        <td colspan="10" style="background-color: gray;"></td>
     </tr>
 
 @foreach (var item in Model)

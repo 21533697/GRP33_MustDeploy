@@ -1,0 +1,107 @@
+﻿@model MyBookingRoles.Models.Rentals.Rental
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rental</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Area.SquareFeet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Area.SquareFeet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Studio.StudioName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Studio.StudioName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Capacity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capacity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentalDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentalTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CapacityPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CapacityPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudioPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudioPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotStudioPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotStudioPrice)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
