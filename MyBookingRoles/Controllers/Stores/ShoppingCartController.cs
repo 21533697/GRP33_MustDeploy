@@ -172,11 +172,15 @@ namespace MyBookingRoles.Controllers.Store
             return RedirectToAction("Payfast", new { ordname = order.OrderName, paymnetamount  = order.PaymentAmount});
             //Create a Add Statement for the modes
         }
-
+        [Authorize(Roles = "Customer")]
         public ActionResult Payfast(string ordname, double paymnetamount)
         {
             ViewBag.ordname = ordname;
             ViewBag.paymnetamount = paymnetamount;
+
+            //Implement Quantity Decrease here.
+            //Implement Quantity Decrease here.
+            //Implement Quantity Decrease here.
             return View();
         }
 

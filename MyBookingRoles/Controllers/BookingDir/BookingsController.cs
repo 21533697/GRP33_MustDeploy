@@ -87,6 +87,9 @@ namespace MyBookingRoles.Controllers.BookingDir
             return View(booking);
         }
 
+        
+
+       
         // GET: Bookings/Edit/5
         public ActionResult Edit(int? id)
         {

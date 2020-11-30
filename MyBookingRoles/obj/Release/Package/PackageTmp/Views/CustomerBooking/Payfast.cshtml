@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Payfast";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+
+    var ordername = ViewBag.Bookingname;
+    var amount = ViewBag.paymnetamount;
+
+}
+
+<h2>Booking Payfast</h2>
+
+<div style="text-align:center;">
+    <h2><u>Complete @ordername Payment</u></h2>
+    <p>Payments are made with PayFast</p>
+    <h3>
+        <b>
+            Booking : @ordername 
+            <br />
+            <u>Booking Amount : R @amount</u>
+        </b>
+    </h3>
+    <form action="https://sandbox.payfast.co.za​/eng/process" method="post">
+        <input type="hidden" name="merchant_id" value="10020684">
+        <input type="hidden" name="merchant_key" value="mp03xoz3tw97r">
+
+        <input type="hidden" name="return_url" value="http://grp33appfinal.azurewebsites.net/CustomerBooking/BookingSuccess">
+
+        <input type="hidden" name="amount" value="@amount">
+        <input type="hidden" name="item_name" value="@ordername">
+        <h2>
+            <input type="submit" id="BtnPayfast" class="btn btn-success form-control">
+        </h2>
+    </form>
+</div>

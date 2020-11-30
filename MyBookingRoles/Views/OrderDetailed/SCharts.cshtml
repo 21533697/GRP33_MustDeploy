@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "SCharts";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h2>SCharts</h2>
+
+<div>
+    @*<img src="@Url.Action("OrderDetailed/GCharts")" alt="Bar Chart" />*@
+    @{
+        var chart = new Chart(width: 500, height: 500, theme: ChartTheme.Yellow)
+       .AddTitle("Sold Product Price")
+       .AddSeries("Default", chartType: "column",
+            xValue: ViewBag.xValue, xField: "ProdName",
+            yValues: ViewBag.yValue, yFields: "Price")
+        .Write();
+    }
+</div>

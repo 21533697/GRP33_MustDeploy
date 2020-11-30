@@ -53,6 +53,13 @@ namespace MyBookingRoles.Controllers
             context.deliveryJobs.Add(job);
             context.SaveChanges();
 
+            var or = context.Bookings.Find(id);
+            or.Status = "On Its Way";
+
+            //
+            context.Entry(or).State = EntityState.Modified;
+            context.SaveChangesAsync();
+
             return RedirectToAction("ApprovedOrders", "Delivery");
         }
 

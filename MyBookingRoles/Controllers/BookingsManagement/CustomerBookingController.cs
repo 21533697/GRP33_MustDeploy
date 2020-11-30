@@ -83,7 +83,7 @@ namespace MyBookingRoles.Controllers.BookingsManagement
                 EmailNotif emailNotif = new EmailNotif();
                 emailNotif.sendNotif(booking.UserID, subject, body);
 
-                return RedirectToAction("BookingSuccess", new { total = booking.TotalDue});
+                return RedirectToAction("Payfast", new { Bookingname = "Artist Booking", paymnetamount = booking.BookingFee});
             }
 
             ViewBag.ArtistID = new SelectList(db.Users.Where(a => a.Name == "Artist"), "UserName", "UserName");
@@ -92,15 +92,43 @@ namespace MyBookingRoles.Controllers.BookingsManagement
             ViewBag.ServiceId = new SelectList(db.Services, "ServiceId", "ServiceType", booking.ServiceId);
             return View(booking);
         }
+
         [Authorize(Roles = "Customer")]
-        public ActionResult BookingSuccess(double total)
+        public ActionResult Payfast(string Bookingname, double paymnetamount)
         {
-            ViewBag.total = total;
+            ViewBag.Bookingname = Bookingname;
+            ViewBag.paymnetamount = paymnetamount;
+
+            //Implement Quantity Decrease here.
+            //Implement Quantity Decrease here.
+            //Implement Quantity Decrease here.
             return View();
         }
 
+    //    , new { Bookingname = booking.ArtistID, paymnetamount = booking.BookingFee
+    //}
+
+    [Authorize(Roles = "Customer")]
+        public ActionResult BookingSuccess()
+        {
+            return View();
+        }
+
+        public ActionResult PayBooking(int id)
+        {
+            var fffff = db.Bookings.Find(id);
+
+            //
+            string subject = fffff.ArtistID + " Booking.";
+            string body = "<b>Dear " + fffff.UserID + "<br /><br />Your Booking Has Been Paid<u>Processing</u>. <b /><br />Total Payment Price : R " + fffff.TotalDue + ".<br /><hr /><b style='color: red'>Please Do not reply</b>.<br /> Thanks & Regards, <br /><b>Studio Foto45!</b>";
+            EmailNotif emailNotif = new EmailNotif();
+            emailNotif.sendNotif(fffff.UserID, subject, body);
+
+            return RedirectToAction("Payfast", new { Bookingname = "Final Booking Payment", paymnetamount = (fffff.TotalDue - 100) });
+        }
+
         // GET: Bookings/Details/5
-        
+
         public ActionResult Details(int? id)
         {
             if (id == null)

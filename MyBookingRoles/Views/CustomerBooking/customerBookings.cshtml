@@ -24,7 +24,7 @@
         @*<u class="pull-right">@Html.ActionLink("BIN", "#",null, new { @class="glyphicon-bishop"})</u>*@
     </b>
 </h3>
-<table class="table table-responsive table-hover table-condensed" ">
+<table class="table table-responsive table-hover table-condensed">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Service.ServiceType)
@@ -73,6 +73,8 @@
                 </td>
                 <td>
                     @Html.ActionLink("Details", "Details", new { id = item.BookingID }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Pay", "PayBooking", new { id = item.BookingID }, new { @class = "btn btn-primary" })
+
                 </td>
             </tr>
         }

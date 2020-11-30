@@ -11,11 +11,14 @@
         All Sales Charts And Odered Produts
     </u>
 </div>
-<div class="row">
-    <h3 style="text-align:center;">
+<div class="row"style="text-align:center;">
+    <h3>
         <u>Sales Charts</u>
     </h3>
-
+    <div >
+        @Html.ActionLink("Sales Chart", "SCharts", "OrderDetailed", null, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Quantity Chart", "GCharts", "OrderDetailed", null, new { @class = "btn btn-primary" })
+    </div>
 </div>
 <hr />
 <table class="table table-responsive table-hover table-condensed" id="UsersWithRoles">

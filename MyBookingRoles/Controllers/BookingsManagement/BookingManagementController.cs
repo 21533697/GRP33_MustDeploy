@@ -141,15 +141,32 @@ namespace MyBookingRoles.Controllers.Bookings
             return RedirectToAction("Index","Bookings", new { id = book.BookingID });
         }
 
+        //public void get()
+        //{
+        //    bool tt = false;
+
+        //    //Get booking
+        //    Booking bb = new Booking();
 
 
+        //    //Check
+        //    string ccc = bb.Date.Day + "" + bb.Time.Minute;
+        //    if ( System.Convert.ToDateTime(ccc) == DateTime.Now)
+        //    {
+        //        tt = true;
+        //    }
 
+        //    var update = "Delayed";
+        //    var st = bb.Status;
 
+        //    if(st != "" || st != "" || st != "" || st != "" && tt != false)
+        //    {
+        //        bb.Status = update;
 
-
-
-
-
+        //        context.Entry(bb).State = EntityState.Modified;
+        //        context.SaveChangesAsync();
+        //    }
+        //}
         private void AddErrors(IdentityResult result)
         {
             foreach (var error in result.Errors)

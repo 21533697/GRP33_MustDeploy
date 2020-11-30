@@ -34,7 +34,7 @@
                                 var base64 = Convert.ToBase64String(item.Pr.ProductPics);
                                 var imgsrc = string.Format("data:image/gif;base64,{0}", base64);
 
-                                <img src='@imgsrc' class="img-responsive" />
+                                <img src='@imgsrc' class="img-responsive" style="height:150px"/>
                             }
                             <p><u>@item.Pr.ProductName</u></p>
 

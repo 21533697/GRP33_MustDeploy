@@ -545,6 +545,8 @@
     <Content Include="Views\CustomerRentals\Index.cshtml" />
     <Content Include="Views\CustomerRentals\StudioRentals.cshtml" />
     <Content Include="Views\CustomerRentals\EquipRentals.cshtml" />
+    <Content Include="Views\CustomerBooking\Payfast.cshtml" />
+    <Content Include="Views\OrderDetailed\SCharts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

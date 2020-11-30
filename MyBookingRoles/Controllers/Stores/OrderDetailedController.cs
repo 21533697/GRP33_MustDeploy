@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using MyBookingRoles.Models;
 using MyBookingRoles.Models.Store;
 using MyBookingRoles.Models.ChartsDataModels;
+using System.Collections;
+using System.Web.Helpers;
 
 namespace MyBookingRoles.Controllers.Stores
 {
@@ -23,8 +25,62 @@ namespace MyBookingRoles.Controllers.Stores
         public ActionResult GCharts()
         {
             //create methods for charts at the buttom
+            //Set Up Chart Data
+            ArrayList xValue = new ArrayList();
+            ArrayList yValue = new ArrayList();
+
+            var results = (from c in context.OrderDetails
+                           select new 
+                           {
+                                c.OrderDetailsId,
+                                c.ProdName,
+                                c.Quantity
+                           });
+
+            //Implement Chat Data
+            results.ToList().ForEach(rs => xValue.Add(rs.ProdName));
+            results.ToList().ForEach(rs => yValue.Add(rs.Quantity));
 
 
+            ViewBag.xValue = xValue;
+            ViewBag.yValue = yValue;
+
+           // //Draw Chart
+           // new Chart(width: 600, height: 400, theme: ChartTheme.Green)
+           // .AddTitle("Appointment Dates")
+           //.AddSeries("Default", chartType: "column", xValue: xValue, yValues: yValue)
+           //       .Write();
+            return View();
+        }
+
+        public ActionResult SCharts()
+        {
+            //create methods for charts at the buttom
+            //Set Up Chart Data
+            ArrayList xValue = new ArrayList();
+            ArrayList yValue = new ArrayList();
+
+            var results = (from c in context.OrderDetails
+                           select new
+                           {
+                               c.OrderDetailsId,
+                               c.ProdName,
+                               c.Price
+                           });
+
+            //Implement Chat Data
+            results.ToList().ForEach(rs => xValue.Add(rs.ProdName));
+            results.ToList().ForEach(rs => yValue.Add(rs.Price));
+
+
+            ViewBag.xValue = xValue;
+            ViewBag.yValue = yValue;
+
+            // //Draw Chart
+            // new Chart(width: 600, height: 400, theme: ChartTheme.Green)
+            // .AddTitle("Appointment Dates")
+            //.AddSeries("Default", chartType: "column", xValue: xValue, yValues: yValue)
+            //       .Write();
             return View();
         }
 
@@ -69,5 +125,7 @@ namespace MyBookingRoles.Controllers.Stores
 
             return events.ToList();
         }
+
+
     }
 }
